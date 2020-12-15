@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+
+}
+.logoNavegacion{
+    width: 10%;
+    
+
+}
+.logoNavegacion img{
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 40px;
+    margin-top: 30px;
+
+}
+h2 {
+
+    text-align: center;
+    font-family: 'Signika',  sans-serif;
+    font-size: 35px;
+    margin: 15px;
+
+
+}
+h3{
+    text-align: center;
+    color: #26e2d3ea;
+}
+h4{
+    text-align: center;
+    margin-top: 5px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-weight: 300;
+}
+/*Diseño barra navegación*/
+
+.menu ul{
+    text-align: center;
+    
+
+}
+.menu li{
+    display: inline-block;
+    align-content: center;
+    margin: 10px 40px;
+    position: relative;
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+   
+
+}
+
+.menu ul ul{
+    position: absolute;
+    display: none;
+    background-color:#8c8885;
+    z-index: 2;
+
+
+}
+
+.menu ul ul li {
+    display: block;
+    margin: auto 35px;
+    
+}
+
+.menu ul ul li a{
+width: max-content;
+text-align: center;
+display: block;
+}
+ul li:hover ul{
+    display: block;
+}
+
+.menu{
+    
+    background-color:#ccc6c2;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.text-center{
+    text-align: center;
+}
+footer p{
+    text-align: left;
+}
+
+
+footer{
+    border: black dashed 3px ;
+    background-color: #ccc6c2;
+
+    padding-left: 6px;
+    margin-top: 5px;
+
+
+}
+
+.banner img{
+    width: 100%;
+   position: absolute;
+   top: -450px;
+}
+
+.banner{
+    height: 321px;
+    overflow: hidden;
+    position: relative;
+}
+
+.quienesSomos {
+    margin: 50px;
+    margin-right: 610px;
+    background-color: #ccc6c2;
+    padding: 15px;
+    overflow: hidden;
+    display: inline-block;
+    
+
+
+}
+
+.conoceUnidades{
+    margin: 20px;
+    margin-top: 50px;
+    
+
+}
+.conoceUnidades img{
+    width: 164px;
+    height: 330px;
+    margin: 25px 25px;
+
+}
+.serParte{
+    margin: 50px;
+    margin-left: 610px;
+    background-color: #ccc6c2;
+    padding: 15px;
+    overflow: hidden;
+
+
+}

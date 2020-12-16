@@ -1,6 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  
+}
+
+body{
+  background-color: beige;
 }
 
 h1 {
@@ -10,7 +15,7 @@ h1 {
   font-size: 40px;
   margin-top: 30px;
 }
-h2 {
+.subtitulos {
   text-align: center;
   font-family: "Signika", sans-serif;
   font-size: 35px;
@@ -33,7 +38,7 @@ p {
 /*----------------------Diseño barra navegación----------------------------------------------------------*/
 nav {
   background-color: #ccc6c2;
-  padding: 10px;
+  padding: 19px;
   position: sticky;
   top: 0px;
   z-index: 2;
@@ -44,15 +49,17 @@ nav {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 .menu li {
   font-family: "Signika", sans-serif;
   list-style-type: none;
-  font-size: 25px;
+  font-size: 21px;
+  position: relative;
 }
 
-a {
+.menu a {
   color: black;
   text-decoration: none;
   font-weight: bold;
@@ -61,25 +68,13 @@ a {
   width: 10%;
 }
 .logoNavegacion img {
+  position: absolute;
   width: 100%;
+  top: -41px;
+  left: 0px;
 }
-/*----------------------------------------------------------------------------------*/
-
-.text-center {
-  text-align: center;
-}
-footer p {
-  text-align: left;
-}
-
-footer {
-  border: black dashed 3px;
-  background-color: #ccc6c2;
-
-  padding-left: 6px;
-  margin-top: 5px;
-}
-
+/*------------------------------------------------------------------------------------------------------*/
+/*----------------------Banner--------------------------------------------------------------------------*/
 .banner img {
   width: 100%;
   position: absolute;
@@ -92,28 +87,130 @@ footer {
   position: relative;
 }
 
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------¿Quienes Somos?----------------------------------------------------------------*/
 .quienesSomos {
-  margin: 50px;
-  margin-right: 610px;
-  background-color: #ccc6c2;
-  padding: 15px;
-  overflow: hidden;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-.conoceUnidades {
-  margin: 20px;
-  margin-top: 50px;
-}
-.conoceUnidades img {
-  width: 164px;
-  height: 330px;
-  margin: 25px 25px;
-}
-.serParte {
-  margin: 50px;
-  margin-left: 610px;
+
+
+.quienesSomosTexto {
+  display: inline-block;
+  width: 500px;
   background-color: #ccc6c2;
   padding: 15px;
-  overflow: hidden;
+  border-radius: 5px;
+  
 }
+
+.quienesSomosBanner img {
+  height: 180px;
+  width: 350px;
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------Conoce unidades----------------------------------------------------------------*/
+
+.conoceUnidades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  
+
+}
+.conoceUnidades img:not(.conoceUnidades-logo) {
+  width: 190px;
+  margin-top: 9px;
+}
+
+.conoceUnidades div{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.conoceUnidades-logo{
+  width: 60px;
+  
+}
+
+.conoceUnidades h2{
+  font-size: 25px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*----------------------Ser parte----------------------------------------------------------------*/
+
+.serParte {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+
+  
+}
+
+.serParte-texto {
+  display: inline-block;
+  width: 500px;
+  background-color: #ccc6c2;
+  padding: 15px;
+  border-radius: 5px;
+  
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*----------------------Pie de pagina----------------------------------------------------------------*/
+footer p {
+  text-align: left;
+}
+
+footer {
+  
+  background-color: #ccc6c2;
+
+  padding: 6px;
+  margin-top: 10px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+.text-center {
+  text-align: center;
+}
+
+
+
+
+
+

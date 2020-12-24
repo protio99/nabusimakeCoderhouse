@@ -37,7 +37,7 @@ p {
 }
 /*----------------------Diseño barra navegación----------------------------------------------------------*/
 nav {
-  background-color: #ccc6c2;
+  background-color: #ccc6c2a6;
   padding: 19px;
   position: sticky;
   top: 0px;
@@ -194,11 +194,35 @@ footer p {
 }
 
 footer {
-  
+  display:grid;
+  grid-template-areas: "titulo titulo"
+  "contacto form";
   background-color: #ccc6c2;
+  grid-row-gap: 12px;
+  grid-column-gap: 1px;
 
-  padding: 6px;
+  padding: 11px;
   margin-top: 10px;
+}
+
+
+
+.logosRedes{
+  width: 20px;
+  margin-right: 3px;
+}
+
+.tituloPie{
+  grid-area: titulo;
+
+}
+
+.contactoPie{
+  grid-area: contacto;
+}
+
+.formPie{
+  grid-area: form;
 }
 
 

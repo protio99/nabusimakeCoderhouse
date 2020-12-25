@@ -1,0 +1,39 @@
+.formularioContacto{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-around;
+    
+    padding: 5px;
+}
+
+.contactoMapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+
+.formularioContacto label{
+    margin: 2.5px;
+    padding: 2.5px;
+}
+
+.formularioContacto input{
+    margin: 2.5px;
+    padding: 2.5px;
+    transition: all 1s;
+    width: 400px;
+}
+
+input:focus{
+    width: 500px;
+
+}
+
+.formularioContacto select{
+    margin: 2.5px;
+    padding: 2.5px;
+
+}

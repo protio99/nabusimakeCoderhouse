@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/estilos.css"/>
+    <link rel="stylesheet" href="./styles/quienes-somos.css"/>
+
     <link rel="icon" type="image/png" href="./images/logo_grupo.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -30,26 +32,34 @@
 
     <!--Formulario de contacto-->
     <h1>¿Quieres ser parte?</h1>
-    <h2>Dejanos tus datos y nos contactaremos contigo</h2>
 
-    <form>
+
+    <h3>Dejanos tus datos y nos contactaremos contigo</h3>
+    <div class="contactoMapa">
+
+        <div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6669.939611018228!2d-75.57146342465782!3d6.267699446539334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428e0c9c8772f%3A0x10cce7ece69b2e2b!2sUniversidad%20de%20Antioquia%20-%20UdeA!5e0!3m2!1ses!2sco!4v1607049879106!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
+        </div>
+
+    <form class="formularioContacto">
         <label for="nombre">Nombre</label>
         <input type="name" name="nombre"/>
         
-        <h4>Genero</h4>
+        <p>Genero</p>
 
 
-        <div>Femenino</div>
+        <label for="fem_masc">Femenino</label>
         <input type="radio" name="fem_masc" value="Femenino" />
 
-        <div>Masculino</div>
+        <label for="fem_masc">Masculino</label>
         <input type="radio" name="fem_masc" value="Masculino" />
 
-        <h4>Ingresa tu correo electronico<h4>
-
+        <label for="correo">Ingresa tu correo electronico</label>
         <input type="e-mail" name="correo"/>
-        <h4>Selecciona tu rango de edad: <h4>
 
+        <label for="rango_edad">Selecciona tu rango de edad: </label>
         <select name="rango_edad">
             <option value="5-10">5-10</option>
             <option value="10-15">10-15</option>
@@ -57,12 +67,11 @@
             <option value="mas de 20">mas de 20</option>
 
         </select>
-        <h4>¿Tienes algo por decirnos?</h4>
 
+        <label for="comentario">¿Tienes algo por decirnos?</label>
         <textarea name="comentario"></textarea>
         
-        <h4>¿Desea recibir información por medio de una llamada telefonica?</h4>
-
+        <label for="aceptar">¿Desea recibir información por medio de una llamada telefonica?</label>
         <input type="checkbox" name="aceptar" value="true"/>
         
         <div>
@@ -73,10 +82,39 @@
 
     </form>
 
-    <div>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6669.939611018228!2d-75.57146342465782!3d6.267699446539334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428e0c9c8772f%3A0x10cce7ece69b2e2b!2sUniversidad%20de%20Antioquia%20-%20UdeA!5e0!3m2!1ses!2sco!4v1607049879106!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
 
     </div>
+    <footer>
+        <div class="tituloPie">
+          <h4>
+          El grupo Scout 55 Nabusimake hace parte de la corporación Scout de
+          Antioquia
+        </h4>
+      </div>
+  
+        <div class="contactoPie">
+          <p>Contacto</p>
+          <p>Telefono: +57 ### ## ##</p>
+          <p>Direccion: Carrera ## f ### Medellin, Antioquia</p>
+          <p>Siguenos en nuestras redes sociales</p>
+          <a href=""><img src="./images/facebook.svg" alt="Facebook" class="logosRedes"></a>
+          <a href=""><img src="./images/instagram.svg" alt="Instagram" class="logosRedes"></a>
+        </div>
+       
+        <div class="formPie">
+          <form>
+            <label for="nombre">Nombre</label>
+            <input type="name" name="nombre"/>
+            
+            <label for="correo">Correo electronico</label>
+            <input type="e-mail" name="correo"/>
+  
+          <label for="comentario">Dejanos un mensaje</label> 
+          <textarea name="comentario">Dejanos un mensaje</textarea>
+          </form>
+  
+        </div>
+      </footer>
 </body>
 </html>

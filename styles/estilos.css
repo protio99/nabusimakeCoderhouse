@@ -23,7 +23,7 @@ h1 {
 }
 h3 {
   text-align: center;
-  color: #26e2d3ea;
+  margin: 5px;
 }
 h4 {
   text-align: center;
@@ -55,14 +55,26 @@ nav {
 .menu li {
   font-family: "Signika", sans-serif;
   list-style-type: none;
-  font-size: 21px;
+  font-size: 16px;
   position: relative;
+  transition: all 0.5s;
+  
+}
+
+.menu li:hover{
+  font-size: 21px;
+  color: #ccc6c2;
 }
 
 .menu a {
   color: black;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.5s;
+}
+
+.menu a:hover{
+  color: #d31515;
 }
 .logoNavegacion {
   width: 10%;
@@ -124,6 +136,10 @@ nav {
 
 /*----------------------Conoce unidades----------------------------------------------------------------*/
 
+@keyframes rotar{
+  from{transform: rotateZ(45deg)}
+  to{transform: rotateZ(-45deg)}
+}
 .conoceUnidades {
   display: flex;
   flex-direction: row;
@@ -150,12 +166,26 @@ nav {
 .conoceUnidades-logo{
   width: 60px;
   
+  
 }
 
+.conoceUnidades-logo:hover{
+  animation-name: rotar;
+  animation-duration: 6s;
+}
 .conoceUnidades h2{
   font-size: 25px;
 }
 
+.subtitulos{
+  transition: all 0.5s;
+}
+
+.subtitulos:hover{
+  font-size: 30px;
+  background-color: #ccc6c2a6;
+  color: #696464;
+}
 /*-----------------------------------------------------------------------------------------------------*/
 
 /*----------------------Ser parte----------------------------------------------------------------*/
@@ -209,7 +239,7 @@ footer {
 
 .logosRedes{
   width: 20px;
-  margin-right: 3px;
+  margin: 3px 3px;
 }
 
 .tituloPie{
@@ -223,6 +253,13 @@ footer {
 
 .formPie{
   grid-area: form;
+  
+}
+
+.formPie form{
+  display: grid;
+  grid-template-rows: auto auto auto; 
+  grid-row-gap: 2px;
 }
 
 

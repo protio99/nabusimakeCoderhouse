@@ -38,7 +38,8 @@ p {
 nav {
   background-color: #ccc6c2a6;
   padding: 19px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0px;
   z-index: 2;
 }
@@ -59,10 +60,7 @@ nav {
   transition: all 0.5s;
 }
 
-.menu li:hover {
-  font-size: 21px;
-  color: #ccc6c2;
-}
+
 
 .menu a {
   color: black;
@@ -72,6 +70,7 @@ nav {
 }
 
 .menu a:hover {
+  font-size: 21px;
   color: #d31515;
 }
 .logoNavegacion {
@@ -79,7 +78,7 @@ nav {
 }
 .logoNavegacion img {
   position: absolute;
-  width: 100%;
+  width: 90%;
   top: -41px;
   left: 0px;
 }
@@ -122,14 +121,7 @@ nav {
 
 /*----------------------Conoce unidades----------------------------------------------------------------*/
 
-@keyframes rotar {
-  from {
-    transform: rotateZ(45deg);
-  }
-  to {
-    transform: rotateZ(-45deg);
-  }
-}
+
 .conoceUnidades {
   display: flex;
   flex-direction: row;
@@ -152,7 +144,7 @@ nav {
 }
 
 .conoceUnidades-logo {
-  width: 60px;
+  width: 130px;
 }
 
 .conoceUnidades-logo:hover {

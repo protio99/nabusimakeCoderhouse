@@ -131,7 +131,7 @@ nav {
 }
 .conoceUnidades img:not(.conoceUnidades-logo) {
   width: 190px;
-  margin-top: 9px;
+  margin: 9px;
 }
 
 .conoceUnidades div {
@@ -163,6 +163,12 @@ nav {
   font-size: 30px;
   background-color: #ccc6c2a6;
   color: #696464;
+}
+
+.conoceUnidadesModal{
+  width: 200px;
+  display: block;
+  margin: auto;
 }
 /*-----------------------------------------------------------------------------------------------------*/
 

@@ -135,6 +135,7 @@ nav {
   height: 21rem;
   object-fit: cover;
   
+  
 }
 
 
@@ -155,7 +156,7 @@ nav {
 }
 
 .conoceUnidades-logo {
-  width: 130px;
+  width: 180px;
 }
 
 
@@ -177,6 +178,8 @@ nav {
   margin-left: auto;
   margin-right: auto;
   transition: 1s linear;
+  position: relative;
+  
 }
 .conoceUnidades-img.hidden {
   overflow: hidden;
@@ -205,11 +208,73 @@ nav {
   filter: opacity(.5);
 
 }
+
 .conoceUnidades-img p{
   display: none;
+  position: absolute;
+
+}
+.conoceUnidades-img:hover .pap-01-iku{
+  display: block;
+  position: absolute;
+  font-family: "Sansita Swashed", cursive;
+  font-size: xx-large;
+  left: 8px;
+  top: 11px;
+}
+
+.conoceUnidades-img:hover .pap-02-iku{
+  display: block;
+  position: absolute;
+  font-family: "Sansita Swashed", cursive;
+  font-size: xx-large;
+  left: 45px;
+  top: 34px;
+}
+
+.conoceUnidades-img:hover .pap-03-iku{
+  display: block;
+  position: absolute;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 3.81rem;
+  left: 1px;
+  top: 73px;
+  line-height: 55px;
+  z-index: 3;
+}
+
+
+.logoSuperpuesto{
+  display: none;
+  width: 20px;
+}
+
+.iconoSuperpuesto{
+  display: none;
+  
 }
 .conoceUnidades-img:hover p{
   display: block;
+}
+
+.conoceUnidades-img:hover .logoSuperpuesto{
+  display: block;
+  width: 14rem;
+  height: auto;
+  position: absolute;
+  left: 61px;
+  top: 154px;
+  transform: rotate(-24deg);
+}
+
+.conoceUnidades-img:hover .iconoSuperpuesto{
+  display: block;
+  width: 6rem;
+  height: auto;
+  position: absolute;
+  top: 239px;
+  left: -2px;
+
 }
 /*-----------------------------------------------------------------------------------------------------*/
 

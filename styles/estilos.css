@@ -221,6 +221,17 @@ nav {
   font-size: xx-large;
   left: 8px;
   top: 11px;
+  animation: baja-pap-01-iku 1s;
+
+}
+
+@keyframes baja-pap-01-iku{
+  from{
+    top: -115px;
+  }
+  to{
+    top: 11px;
+  }
 }
 
 .conoceUnidades-img:hover .pap-02-iku{
@@ -230,20 +241,42 @@ nav {
   font-size: xx-large;
   left: 45px;
   top: 34px;
+  animation: baja-pap-02-iku 1s;
+
+}
+
+@keyframes baja-pap-02-iku{
+  from{
+    top: -115px;
+  }
+  to{
+    top: 34px;
+  }
 }
 
 .conoceUnidades-img:hover .pap-03-iku{
   display: block;
   position: absolute;
   font-family: "Sansita Swashed", cursive;
+  
   font-size: 3.81rem;
   left: 1px;
   top: 73px;
   line-height: 55px;
   z-index: 3;
+  color: black;
+  animation: baja-pap-03-iku 1s;
 }
 
+@keyframes baja-pap-03-iku{
+  from{
+    top: -115px;
+  }
+  to{
+    top: 73px;
+  }
 
+}
 .logoSuperpuesto{
   display: none;
   width: 20px;
@@ -265,8 +298,26 @@ nav {
   left: 61px;
   top: 154px;
   transform: rotate(-24deg);
+  animation-name: subeLogo;
+  animation-duration: 1s;
 }
 
+@keyframes subeLogo{
+  from{
+    top: 313px;
+  }
+  to{
+    top: 154px;
+  }
+}
+@keyframes subeIcono{
+  from{
+    top: 337px;
+  }
+  to{
+    top: 239px;
+  }
+}
 .conoceUnidades-img:hover .iconoSuperpuesto{
   display: block;
   width: 6rem;
@@ -274,7 +325,8 @@ nav {
   position: absolute;
   top: 239px;
   left: -2px;
-
+  animation-name: subeIcono;
+  animation-duration: 1s;
 }
 /*-----------------------------------------------------------------------------------------------------*/
 

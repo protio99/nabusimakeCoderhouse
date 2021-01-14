@@ -87,9 +87,10 @@ nav {
 
 
 .banner .carousel {
-  height: 321px;
+  height: 100vh;
   overflow: hidden;
   position: relative;
+
 }
 /*-----------------------------------------------------------------------------------------------------*/
 
@@ -121,6 +122,7 @@ nav {
 
 /*----------------------Conoce unidades----------------------------------------------------------------*/
 
+}
 
 .conoceUnidades {
   display: flex;
@@ -128,6 +130,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin-top: 63px;
 }
 .conoceUnidades img:not(.conoceUnidades-logo) {
   width: 15rem;
@@ -145,7 +148,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: -20px;
 }
 
 
@@ -233,6 +236,7 @@ nav {
     top: 11px;
   }
 }
+
 
 .conoceUnidades-img:hover .pap-02-iku{
   display: block;

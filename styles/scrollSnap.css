@@ -9,5 +9,5 @@ scroll-behavior: smooth;
 section {
   min-height: 100vh;
 
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }

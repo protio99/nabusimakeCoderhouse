@@ -36,8 +36,8 @@ p {
 }
 /*----------------------Diseño barra navegación----------------------------------------------------------*/
 nav {
-  background-color: #ccc6c2a6;
-  padding: 19px;
+  background-color: #e2e0de;
+  padding: 10px;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -95,29 +95,105 @@ nav {
 /*-----------------------------------------------------------------------------------------------------*/
 
 /*----------------------¿Quienes Somos?----------------------------------------------------------------*/
-.quienesSomos {
+.seccionQuienesSomos{
+  position: relative;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  margin-top: 20px;
+  justify-content: center;
+  
 }
 
-.quienesSomosTexto {
-  display: inline-block;
-  width: 500px;
-  background-color: #ccc6c2;
-  padding: 15px;
-  border-radius: 5px;
+.quienesSomos {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: 230px;
+  grid-gap: 10px;
+  padding: 10px;
+  
+  
+ 
+  
 }
 
-.quienesSomosBanner img {
-  height: 180px;
-  width: 350px;
+.quienesSomos__itemGaleria .quienesSomos__imgGaleria {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: opacity(40%)
+ 
+
+
 }
 
+.quienesSomos__itemGaleria:hover .quienesSomos__imgGaleria {
+  
+ 
+  filter: opacity(100%);
+  transition: 1s linear;
+}
+
+.quienesSomos__itemGaleria:nth-child(2){
+  grid-column-start: span 2;
+
+}
+
+.quienesSomos__itemGaleria:nth-child(1){
+  grid-row-start: span 2;
+
+}
+.quienesSomos__itemGaleria:nth-child(3){
+  grid-row-start: span 2;
+
+}
+.quienesSomos__itemGaleria:nth-child(6){
+  grid-column-start: span 2;
+
+}
+
+.quienesSomos__texto{
+
+-webkit-border-radius:213px 213px 213px 213px;
+background-color: rgb(25, 61, 11);
+margin: 200px 200px;
+padding: 40px;
+height: 442px;
+position: absolute;
+width: 458px;
+z-index: 2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border: 9px solid black;
+border-left-color: red;
+border-right-color: rgb(221, 221, 13);
+border-bottom-color: rgb(221, 221, 13);
+border-top-color: red;
+
+}
+.quienesSomos__texto:nth-child(2){
+  margin: 20px 20px;
+  text-align: center;
+  color: white;
+}
+.quienesSomos__texto:nth-child(1){
+  margin: 20px 20px;
+  text-align: center;
+}
+.quienesSomos__textoContenedo{
+  position: relative;
+}
+.quienesSomos__logo{
+  position: absolute;
+  
+  top: 295px;
+  left: 188px;
+  z-index: 4;
+}
+.quienesSomos__logo img{
+  width: 250px;
+  height: 250px;
+  z-index: 4;
+}
 /*-----------------------------------------------------------------------------------------------------*/
 
 /*----------------------Conoce unidades----------------------------------------------------------------*/
@@ -183,8 +259,7 @@ nav {
   transition: 1s linear;
   position: relative;
   
-}
-.conoceUnidades-img.hidden {
+}.conoceUnidades-img.hidden {
   overflow: hidden;
 }
 .conoceUnidades-img .imagenUnidades {
@@ -344,9 +419,40 @@ nav {
   align-items: center;
   padding: 20px;
   margin-top: 20px;
+  position: relative;
 }
 
+.serParte-videoIg{
+  position: absolute;
+  top: 123px;
+  left: 371px;
+  z-index: 2;
+  
+  
+}
+.serParte__video-celular{
+  position: absolute;
+  top: 112px;
+  left: 242px;
+  width: 432px;
+
+}
+.serParte__video-carpa{
+  position: absolute;
+  top: 348px;
+  left: 10px;
+  width: 349px;
+}
+.serParte__video-fogata{
+  position: absolute;
+  top: 348px;
+  left: 559px;
+  width: 349px;
+}
 .serParte-texto {
+  position: absolute;
+  top: 100px;
+  left: 820px;
   display: inline-block;
   width: 500px;
   background-color: #ccc6c2;

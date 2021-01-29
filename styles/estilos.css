@@ -41,7 +41,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0px;
-  z-index: 2;
+  z-index: 10;
 }
 .menu {
   display: flex;
@@ -424,7 +424,7 @@ border-top-color: red;
 
 .serParte-videoIg{
   position: absolute;
-  top: 123px;
+  top: 121px;
   left: 371px;
   z-index: 2;
   
@@ -439,15 +439,16 @@ border-top-color: red;
 }
 .serParte__video-carpa{
   position: absolute;
-  top: 348px;
+  top: 338px;
   left: 10px;
   width: 349px;
 }
 .serParte__video-fogata{
   position: absolute;
-  top: 348px;
-  left: 559px;
+  top: 367px;
+  left: 555px;
   width: 349px;
+  z-index: 4;
 }
 .serParte-texto {
   position: absolute;

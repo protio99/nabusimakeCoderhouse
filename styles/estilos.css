@@ -36,7 +36,7 @@ p {
 }
 /*----------------------Diseño barra navegación----------------------------------------------------------*/
 nav {
-  background-color: #e2e0de;
+  background-color: #d6d6d6ab;
   padding: 10px;
   position: fixed;
   width: 100%;
@@ -70,7 +70,7 @@ nav {
 }
 
 .menu a:hover {
-  font-size: 21px;
+  
   color: #d31515;
 }
 .logoNavegacion {
@@ -422,34 +422,39 @@ border-top-color: red;
   position: relative;
 }
 
-.serParte-videoIg{
+.serParte-escenario{
   position: absolute;
-  top: 121px;
-  left: 371px;
-  z-index: 2;
-  
+  top: 1vw;
+  left: 0vw;
   
 }
-.serParte__video-celular{
+.serParte-escenario img{
+width: 62vw;
+}
+.serParte-escenario_foto{
   position: absolute;
-  top: 112px;
-  left: 242px;
-  width: 432px;
+  top: 12.9vw;
+  left: 27vw;
+}
+.serParte-boton{
+  position: absolute;
+  top: 22.9vw;
+  left: 33vw;
+}
 
+.serParte-boton img{
+  width: 3vw;
 }
-.serParte__video-carpa{
-  position: absolute;
-  top: 338px;
-  left: 10px;
-  width: 349px;
+.serParte-boton img:hover{
+  border-radius: 2.5vw;
+  box-shadow: 0 0 11px rgba(49, 45, 45, 0.39);
 }
-.serParte__video-fogata{
-  position: absolute;
-  top: 367px;
-  left: 555px;
-  width: 349px;
-  z-index: 4;
+.serParte-escenario_foto img{
+  width: 14vw;
+  border-radius: 5.7vw;
+  Clip-path: inset(1vw 1.6vw 0.1vw 1.9vw);
 }
+
 .serParte-texto {
   position: absolute;
   top: 100px;

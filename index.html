@@ -49,15 +49,12 @@
     <!--Barra de navegación-->
 
     <nav>
-      <ul class="menu">
-        <li><a href="./quienes_somos.html">¿Quienes somos?</a></li>
-        <li><a href="./unidades.html">Unidades</a></li>
-        <li>
-          <a href="./index.html">Inicio</a>
-        </li>
-        <li><a href="./galeria.html">Galeria</a></li>
-        <li><a href="./tienda.html">Tienda scout</a></li>
-      </ul>
+      <a href="./quienes_somos.html">¿Quienes somos?</a>
+      <a href="./unidades.html">Unidades</a>
+      <a href="./index.html">Inicio</a>
+      <a href="./galeria.html">Galeria</a>
+      <a href="./tienda.html">Tienda scout</a>
+      <div class="animation start-home"></div>
     </nav>
     <div class="slider">
       <section>
@@ -348,41 +345,55 @@
           </div>
         </div>
       </section>
+      
       <section>
-    <footer>
-      <div class="tituloPie">
-        <h4>
-          El grupo Scout 55 Nabusimake hace parte de la corporación Scout de
-          Antioquia
-        </h4>
-      </div>
+        <div class="seccionContacto">
+            <div class="seccionContacto__encabezado">
+              
+              <p class="seccionContacto-tituloGrande">Contactanos</p>
+              <p class="seccionContacto-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio rerum aliquid, labore debitis ipsum porro repudiandae, sint blanditiis maxime id delectus veniam quisquam inventore velit hic adipisci deserunt neque?</p>
+            </div>
+            
+          <div class="seccionContacto__info">
+            
+            <p class="seccionContacto-tituloMed">Contacto</p>
+            <div class="seccionContacto-linea"></div>
+            <div class="seccionContacto__info-grid">
+              <img src="./images/email.svg" alt="email">
+              <p>nbk55@info.com.co</p>
+              <img src="./images/informacion.svg" alt="telefono">
+              <p>+57 ### ## ##</p>
+              <img src="./images/ubicacion.svg" alt="direccion">
+              <p>Direccion: Carrera ## f ### Medellin, Antioquia</p>
+            </div>
+           
+          </div>
+    
+          <div class="seccionContacto__form">
+            
+            <p class="seccionContacto-tituloMed" >Escribenos</p>
+            <div class="seccionContacto-linea"></div>
+            <form>
+              
+              <input type="name" name="nombre" placeholder="Nombre" />
+              
+              
+              <input type="e-mail" name="correo" placeholder="Correo electronico"/>
+              
+              
+              <textarea name="comentario">Dejanos un mensaje</textarea>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
 
-      <div class="contactoPie">
-        <p>Contacto</p>
-        <p>Telefono: +57 ### ## ##</p>
-        <p>Direccion: Carrera ## f ### Medellin, Antioquia</p>
-        <p>Siguenos en nuestras redes sociales</p>
-        <a href=""
-          ><img src="./images/facebook.svg" alt="Facebook" class="logosRedes"
-        /></a>
-        <a href=""
-          ><img src="./images/instagram.svg" alt="Instagram" class="logosRedes"
-        /></a>
-      </div>
+          <div class="seccionContacto__redes">
+           
+            <p class="seccionContacto-tituloMed">Siguenos </p>
+            <div class="seccionContacto-linea"></div>
 
-      <div class="formPie">
-        <form>
-          <label for="nombre">Nombre</label>
-          <input type="name" name="nombre" />
-
-          <label for="correo">Correo electronico</label>
-          <input type="e-mail" name="correo" />
-
-          <label for="comentario">Dejanos un mensaje</label>
-          <textarea name="comentario">Dejanos un mensaje</textarea>
-        </form>
-      </div>
-    </footer>
+          </div>
+        </div>
+   
       </section>
     </div>
 

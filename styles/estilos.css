@@ -5,6 +5,7 @@
 
 body {
   background-color: beige;
+  overflow-y:hidden;
 }
 
 h1 {
@@ -36,52 +37,92 @@ p {
 }
 /*----------------------Diseño barra navegación----------------------------------------------------------*/
 nav {
-  background-color: #d6d6d6ab;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  z-index: 10;
+	margin: 2px auto 2px;
+  text-align: center;
+	position: relative;
+	width: 50vw;
+	height: 4vw;
+	background-color: #0b4705;
+	border-radius: 8px;
+	font-size: 0;
 }
-.menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-}
-
-.menu li {
-  font-family: "Signika", sans-serif;
-  list-style-type: none;
-  font-size: 16px;
-  position: relative;
-  transition: all 0.5s;
-}
-
-
-
-.menu a {
-  color: black;
+a:hover{
   text-decoration: none;
+  color: white;
+
+}
+nav a {
+	line-height: 4vw;
+	height: 100%;
+  font-size: 1.09vw;
+  font-family: "Signika", sans-serif;
   font-weight: bold;
-  transition: all 0.5s;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+  cursor: pointer;
+  
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 12vw;
+}
+a:nth-child(2) {
+	width: 8vw;
+}
+a:nth-child(3) {
+	width: 7vw;
+}
+a:nth-child(4) {
+	width: 8vw;
+}
+a:nth-child(5) {
+	width: 10vw;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 12vw;
+	left: 2.5vw;
+	background-color: #af1818;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 8vw;
+	left: 14.5vw;
+  background-color: #af1818;
+  ;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 7vw;
+	left: 22.5vw;
+  background-color: #af1818;
+
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 8vw;
+	left: 29.5vw;
+  background-color: #af1818;
+
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 10vw;
+	left: 37.5vw;
+  background-color: #af1818;
+
 }
 
-.menu a:hover {
-  
-  color: #d31515;
-}
-.logoNavegacion {
-  width: 10%;
-}
-.logoNavegacion img {
-  position: absolute;
-  width: 90%;
-  top: -41px;
-  left: 0px;
-}
+
+
+
 /*------------------------------------------------------------------------------------------------------*/
 /*----------------------Banner--------------------------------------------------------------------------*/
 
@@ -468,45 +509,97 @@ width: 62vw;
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*----------------------Pie de pagina----------------------------------------------------------------*/
-footer p {
-  text-align: left;
-}
 
-footer {
+
+.seccionContacto {
   display: grid;
   grid-template-areas:
-    "titulo titulo"
-    "contacto form";
-  background-color: #ccc6c2;
-  grid-row-gap: 12px;
-  grid-column-gap: 1px;
+    "titulo titulo titulo"
+    "contacto form redes";
+ 
+  grid-row-gap: 40px;
+  grid-column-gap: 2px;
 
   padding: 11px;
-  margin-top: 10px;
+  margin: 10px 20px auto 30px;
+}
+.seccionContacto__info-grid{
+  display: grid;
+  grid-template-areas:
+    "iconoEmail email"
+    "iconoTel telefono"
+    "iconoLocacion direccion";
+  row-gap: 10px;
+}
+.seccionContacto__info-grid p{
+  text-align: left;
+} 
+
+.seccionContacto__info-grid:nth-child(1){
+  grid-area: iconoEmail;
+}
+.seccionContacto__info-grid:nth-child(2){
+  grid-area: email;
+}
+.seccionContacto__info-grid:nth-child(3){
+  grid-area: iconoTel;
+}
+.seccionContacto__info-grid:nth-child(4){
+  grid-area: telefono;
+}
+.seccionContacto__info-grid:nth-child(5){
+  grid-area: iconoLocacion;
+}
+.seccionContacto__info-grid:nth-child(6){
+  grid-area: direccion;
 }
 
-.logosRedes {
-  width: 20px;
-  margin: 3px 3px;
+.seccionContacto-linea{
+  border-top: 1px solid #af1818;
+  height: 2px;
+  padding: 0;
+  margin: 20px 82px 20px 82px;
+
+}
+.seccionContacto-tituloMed{
+  font-size: 2.6vw;
+  font-weight: bold;
+  font-family: "Signika", sans-serif;
+
+
 }
 
-.tituloPie {
+.seccionContacto__encabezado {
   grid-area: titulo;
 }
 
-.contactoPie {
+.seccionContacto-texto{
+  font-family: "Signika", sans-serif;
+  text-align: left;
+  font-size: 1.3vw;
+  margin-right: 29vw;
+}
+.seccionContacto-tituloGrande{
+  text-align: left;
+  font-size: 5vw;
+  font-family: "Sansita Swashed", cursive;
+  font-weight: bold;
+}
+
+.seccionContacto__info {
   grid-area: contacto;
 }
+.seccionContacto__info img{
+  width: 2.5vw;
 
-.formPie {
+}
+.seccionContacto__form{
   grid-area: form;
 }
-
-.formPie form {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-row-gap: 2px;
+.seccionContacto__redes{
+  grid-area: redes;
 }
+
 
 /*-----------------------------------------------------------------------------------------------------*/
 

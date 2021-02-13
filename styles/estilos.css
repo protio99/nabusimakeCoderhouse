@@ -5,7 +5,7 @@
 
 body {
   background-color: beige;
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -37,200 +37,193 @@ p {
 }
 /*----------------------Diseño barra navegación----------------------------------------------------------*/
 nav {
-	margin: 2px auto 2px;
   text-align: center;
-	position: relative;
-	width: 50vw;
-	height: 4vw;
-	background-color: #0b4705;
-	border-radius: 8px;
-	font-size: 0;
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  width: 100%;
+  height: 4vw;
+  z-index: 2;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
 }
-a:hover{
+.nav__links {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+a:hover {
   text-decoration: none;
   color: white;
-
 }
 nav a {
-	line-height: 4vw;
-	height: 100%;
+  line-height: 4vw;
+  height: 100%;
   font-size: 1.09vw;
   font-family: "Signika", sans-serif;
   font-weight: bold;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	color: white;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
   cursor: pointer;
-  
 }
 nav .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	z-index: 0;
-	transition: all .5s ease 0s;
-	border-radius: 8px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
 }
-a:nth-child(1) {
-	width: 12vw;
+nav a:nth-child(1) {
+  width: 12vw;
 }
-a:nth-child(2) {
-	width: 8vw;
+nav a:nth-child(2) {
+  width: 8vw;
 }
-a:nth-child(3) {
-	width: 7vw;
+nav a:nth-child(3) {
+  width: 7vw;
 }
-a:nth-child(4) {
-	width: 8vw;
+nav a:nth-child(4) {
+  width: 8vw;
 }
-a:nth-child(5) {
-	width: 10vw;
+nav a:nth-child(5) {
+  width: 10vw;
 }
-nav .start-home, a:nth-child(1):hover~.animation {
-	width: 12vw;
-	left: 2.5vw;
-	background-color: #af1818;
-}
-nav .start-about, a:nth-child(2):hover~.animation {
-	width: 8vw;
-	left: 14.5vw;
+nav .start-about,
+a:nth-child(1):hover ~ .animation {
+  width: 12vw;
+  left: 0;
   background-color: #af1818;
-  ;
 }
-nav .start-blog, a:nth-child(3):hover~.animation {
-	width: 7vw;
-	left: 22.5vw;
+nav .start-unidades,
+a:nth-child(2):hover ~ .animation {
+  width: 8vw;
+  left: 12vw;
+  background-color: #fbbb09;
+}
+nav .start-inicio,
+a:nth-child(3):hover ~ .animation {
+  width: 7vw;
+  left: 20vw;
+  background-color: #124b04;
+}
+nav .start-galeria,
+a:nth-child(4):hover ~ .animation {
+  width: 8vw;
+  left: 27vw;
   background-color: #af1818;
-
 }
-nav .start-portefolio, a:nth-child(4):hover~.animation {
-	width: 8vw;
-	left: 29.5vw;
-  background-color: #af1818;
-
+nav .start-tienda,
+a:nth-child(5):hover ~ .animation {
+  width: 10vw;
+  left: 35vw;
+  background-color: #fbbb09;
 }
-nav .start-contact, a:nth-child(5):hover~.animation {
-	width: 10vw;
-	left: 37.5vw;
-  background-color: #af1818;
-
-}
-
-
-
 
 /*------------------------------------------------------------------------------------------------------*/
 /*----------------------Banner--------------------------------------------------------------------------*/
-
 
 .banner .carousel {
   height: 100vh;
   overflow: hidden;
   position: relative;
-
 }
 /*-----------------------------------------------------------------------------------------------------*/
 
 /*----------------------¿Quienes Somos?----------------------------------------------------------------*/
-.seccionQuienesSomos{
+.seccionQuienesSomos {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .quienesSomos {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 230px;
   grid-gap: 10px;
   padding: 10px;
-  
-  
- 
-  
 }
+
 
 .quienesSomos__itemGaleria .quienesSomos__imgGaleria {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: opacity(40%)
- 
+  filter: blur(2px) grayscale(80%);
+  border-radius: 5px;
+  transition: 500ms ease;
+}
 
-
+.quienesSomos:hover~.quienesSomos__texto{
+  transform: scale(30%);
 }
 
 .quienesSomos__itemGaleria:hover .quienesSomos__imgGaleria {
-  
- 
-  filter: opacity(100%);
-  transition: 1s linear;
+  filter: none;
 }
 
-.quienesSomos__itemGaleria:nth-child(2){
+.quienesSomos__itemGaleria:nth-child(2) {
   grid-column-start: span 2;
-
 }
 
-.quienesSomos__itemGaleria:nth-child(1){
+.quienesSomos__itemGaleria:nth-child(1) {
   grid-row-start: span 2;
-
 }
-.quienesSomos__itemGaleria:nth-child(3){
+.quienesSomos__itemGaleria:nth-child(3) {
   grid-row-start: span 2;
-
 }
-.quienesSomos__itemGaleria:nth-child(6){
+.quienesSomos__itemGaleria:nth-child(6) {
   grid-column-start: span 2;
-
 }
 
-.quienesSomos__texto{
-
--webkit-border-radius:213px 213px 213px 213px;
-background-color: rgb(25, 61, 11);
-margin: 200px 200px;
-padding: 40px;
-height: 442px;
-position: absolute;
-width: 458px;
-z-index: 2;
-display: flex;
-flex-direction: column;
-justify-content: center;
-border: 9px solid black;
-border-left-color: red;
-border-right-color: rgb(221, 221, 13);
-border-bottom-color: rgb(221, 221, 13);
-border-top-color: red;
-
+.quienesSomos__texto {
+  -webkit-border-radius: 213px 213px 213px 213px;
+  background-color: rgb(25, 61, 11);
+  margin: 200px 200px;
+  padding: 40px;
+  height: 442px;
+  position: absolute;
+  width: 458px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 9px solid black;
+  border-left-color: red;
+  border-right-color: #fbbb09;
+  border-bottom-color: #fbbb09;
+  border-top-color: red;
+  transition: 1s ease;
 }
-.quienesSomos__texto:nth-child(2){
+
+.quienesSomos__texto:nth-child(2) {
   margin: 20px 20px;
   text-align: center;
   color: white;
 }
-.quienesSomos__texto:nth-child(1){
+.quienesSomos__texto:nth-child(1) {
   margin: 20px 20px;
   text-align: center;
 }
-.quienesSomos__textoContenedo{
+.quienesSomos__textoContenedo {
   position: relative;
 }
-.quienesSomos__logo{
+.quienesSomos__logo {
   position: absolute;
-  
+
   top: 295px;
   left: 188px;
   z-index: 4;
 }
-.quienesSomos__logo img{
+.quienesSomos__logo img {
   width: 250px;
   height: 250px;
   z-index: 4;
@@ -239,7 +232,9 @@ border-top-color: red;
 
 /*----------------------Conoce unidades----------------------------------------------------------------*/
 
-
+#unidadesInicio {
+  padding-top: 5rem;
+}
 
 .conoceUnidades {
   display: flex;
@@ -251,13 +246,10 @@ border-top-color: red;
 }
 .conoceUnidades img:not(.conoceUnidades-logo) {
   width: 15rem;
- 
+
   height: 21rem;
   object-fit: cover;
-  
-  
 }
-
 
 .conoceUnidades div {
   display: flex;
@@ -268,30 +260,24 @@ border-top-color: red;
   margin-top: -20px;
 }
 
-
-.conoceUnidades-img:hover{
-  -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
-  box-shadow: 10px 10px 14px 4px rgba(0,0,0,0.47);
-  
+.conoceUnidades-img:hover {
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 14px 4px rgba(0, 0, 0, 0.47);
 }
 
 .conoceUnidades-logo {
   width: 180px;
 }
 
-
 .conoceUnidades h2 {
   font-size: 25px;
 }
 
-
-
-.conoceUnidadesModal{
+.conoceUnidadesModal {
   width: 200px;
   display: block;
   margin: auto;
 }
-
 
 .conoceUnidades-img {
   display: block;
@@ -299,8 +285,9 @@ border-top-color: red;
   margin-right: auto;
   transition: 1s linear;
   position: relative;
-  
-}.conoceUnidades-img.hidden {
+  border-radius: 5px;
+}
+.conoceUnidades-img.hidden {
   overflow: hidden;
 }
 .conoceUnidades-img .imagenUnidades {
@@ -324,16 +311,14 @@ border-top-color: red;
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   -o-transform: scale(1);
-  filter: opacity(.5);
-
+  filter: opacity(0.5);
 }
 
-.conoceUnidades-img p{
+.conoceUnidades-img p {
   display: none;
   position: absolute;
-
 }
-.conoceUnidades-img:hover .pap-01-iku{
+.conoceUnidades-img:hover .pap-01-iku {
   display: block;
   position: absolute;
   font-family: "Sansita Swashed", cursive;
@@ -341,20 +326,18 @@ border-top-color: red;
   left: 8px;
   top: 11px;
   animation: baja-pap-01-iku 1s;
-
 }
 
-@keyframes baja-pap-01-iku{
-  from{
+@keyframes baja-pap-01-iku {
+  from {
     top: -115px;
   }
-  to{
+  to {
     top: 11px;
   }
 }
 
-
-.conoceUnidades-img:hover .pap-02-iku{
+.conoceUnidades-img:hover .pap-02-iku {
   display: block;
   position: absolute;
   font-family: "Sansita Swashed", cursive;
@@ -362,23 +345,22 @@ border-top-color: red;
   left: 45px;
   top: 34px;
   animation: baja-pap-02-iku 1s;
-
 }
 
-@keyframes baja-pap-02-iku{
-  from{
+@keyframes baja-pap-02-iku {
+  from {
     top: -115px;
   }
-  to{
+  to {
     top: 34px;
   }
 }
 
-.conoceUnidades-img:hover .pap-03-iku{
+.conoceUnidades-img:hover .pap-03-iku {
   display: block;
   position: absolute;
   font-family: "Sansita Swashed", cursive;
-  
+
   font-size: 3.81rem;
   left: 1px;
   top: 73px;
@@ -388,29 +370,27 @@ border-top-color: red;
   animation: baja-pap-03-iku 1s;
 }
 
-@keyframes baja-pap-03-iku{
-  from{
+@keyframes baja-pap-03-iku {
+  from {
     top: -115px;
   }
-  to{
+  to {
     top: 73px;
   }
-
 }
-.logoSuperpuesto{
+.logoSuperpuesto {
   display: none;
   width: 20px;
 }
 
-.iconoSuperpuesto{
+.iconoSuperpuesto {
   display: none;
-  
 }
-.conoceUnidades-img:hover p{
+.conoceUnidades-img:hover p {
   display: block;
 }
 
-.conoceUnidades-img:hover .logoSuperpuesto{
+.conoceUnidades-img:hover .logoSuperpuesto {
   display: block;
   width: 14rem;
   height: auto;
@@ -422,23 +402,23 @@ border-top-color: red;
   animation-duration: 1s;
 }
 
-@keyframes subeLogo{
-  from{
+@keyframes subeLogo {
+  from {
     top: 313px;
   }
-  to{
+  to {
     top: 154px;
   }
 }
-@keyframes subeIcono{
-  from{
+@keyframes subeIcono {
+  from {
     top: 337px;
   }
-  to{
+  to {
     top: 239px;
   }
 }
-.conoceUnidades-img:hover .iconoSuperpuesto{
+.conoceUnidades-img:hover .iconoSuperpuesto {
   display: block;
   width: 6rem;
   height: auto;
@@ -463,37 +443,36 @@ border-top-color: red;
   position: relative;
 }
 
-.serParte-escenario{
+.serParte-escenario {
   position: absolute;
   top: 1vw;
   left: 0vw;
-  
 }
-.serParte-escenario img{
-width: 62vw;
+.serParte-escenario img {
+  width: 62vw;
 }
-.serParte-escenario_foto{
+.serParte-escenario_foto {
   position: absolute;
   top: 12.9vw;
   left: 27vw;
 }
-.serParte-boton{
+.serParte-boton {
   position: absolute;
   top: 22.9vw;
   left: 33vw;
 }
 
-.serParte-boton img{
+.serParte-boton img {
   width: 3vw;
 }
-.serParte-boton img:hover{
+.serParte-boton img:hover {
   border-radius: 2.5vw;
   box-shadow: 0 0 11px rgba(49, 45, 45, 0.39);
 }
-.serParte-escenario_foto img{
+.serParte-escenario_foto img {
   width: 14vw;
   border-radius: 5.7vw;
-  Clip-path: inset(1vw 1.6vw 0.1vw 1.9vw);
+  clip-path: inset(1vw 1.6vw 0.1vw 1.9vw);
 }
 
 .serParte-texto {
@@ -510,20 +489,20 @@ width: 62vw;
 /*-----------------------------------------------------------------------------------------------------*/
 /*----------------------Pie de pagina----------------------------------------------------------------*/
 
-
 .seccionContacto {
   display: grid;
   grid-template-areas:
     "titulo titulo titulo"
     "contacto form redes";
- 
+
   grid-row-gap: 40px;
   grid-column-gap: 2px;
+  grid-template-columns: repeat(3, 1fr);
 
-  padding: 11px;
+  padding: 5rem 1rem;
   margin: 10px 20px auto 30px;
 }
-.seccionContacto__info-grid{
+.seccionContacto__info-grid {
   display: grid;
   grid-template-areas:
     "iconoEmail email"
@@ -531,55 +510,53 @@ width: 62vw;
     "iconoLocacion direccion";
   row-gap: 10px;
 }
-.seccionContacto__info-grid p{
+.seccionContacto__info-grid p {
   text-align: left;
-} 
+}
 
-.seccionContacto__info-grid:nth-child(1){
+.seccionContacto__info-grid:nth-child(1) {
   grid-area: iconoEmail;
 }
-.seccionContacto__info-grid:nth-child(2){
+.seccionContacto__info-grid:nth-child(2) {
   grid-area: email;
 }
-.seccionContacto__info-grid:nth-child(3){
+.seccionContacto__info-grid:nth-child(3) {
   grid-area: iconoTel;
 }
-.seccionContacto__info-grid:nth-child(4){
+.seccionContacto__info-grid:nth-child(4) {
   grid-area: telefono;
 }
-.seccionContacto__info-grid:nth-child(5){
+.seccionContacto__info-grid:nth-child(5) {
   grid-area: iconoLocacion;
 }
-.seccionContacto__info-grid:nth-child(6){
+.seccionContacto__info-grid:nth-child(6) {
   grid-area: direccion;
 }
 
-.seccionContacto-linea{
+.seccionContacto-linea {
   border-top: 1px solid #af1818;
   height: 2px;
   padding: 0;
   margin: 20px 82px 20px 82px;
-
 }
-.seccionContacto-tituloMed{
+.seccionContacto-tituloMed {
   font-size: 2.6vw;
   font-weight: bold;
   font-family: "Signika", sans-serif;
-
-
+  text-align: center;
 }
 
 .seccionContacto__encabezado {
   grid-area: titulo;
 }
 
-.seccionContacto-texto{
+.seccionContacto-texto {
   font-family: "Signika", sans-serif;
   text-align: left;
   font-size: 1.3vw;
   margin-right: 29vw;
 }
-.seccionContacto-tituloGrande{
+.seccionContacto-tituloGrande {
   text-align: left;
   font-size: 5vw;
   font-family: "Sansita Swashed", cursive;
@@ -589,17 +566,41 @@ width: 62vw;
 .seccionContacto__info {
   grid-area: contacto;
 }
-.seccionContacto__info img{
+.seccionContacto__info img {
   width: 2.5vw;
-
 }
-.seccionContacto__form{
+.seccionContacto__form {
   grid-area: form;
 }
-.seccionContacto__redes{
+.seccionContacto__redes {
   grid-area: redes;
 }
+.seccionContacto__form-flex {
+  display: flex;
+  justify-content: end;
+  padding: 1vw;
+  flex-wrap: wrap;
+}
 
+.seccionContacto__form-input {
+  padding: 0.5vw;
+  margin-top: 0.5vw;
+  color: #5f635f;
+  background-color: #f1eeeeda;
+  border-radius: 3px;
+  width: 30vw;
+  border: #c9c8c8da 1px solid;
+}
+
+.seccionContacto__form-submit {
+  margin-top: 0.5vw;
+  padding: 0.4vw;
+  width: 15vw;
+}
+
+.seccionContacto__form-submit:hover {
+  box-shadow: 7px 13px 37px rgba(34, 34, 34, 0.596);
+}
 
 /*-----------------------------------------------------------------------------------------------------*/
 

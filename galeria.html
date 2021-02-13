@@ -1,70 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
     name="description"
-    content="Echa un vistazo a nuestra galeria de fotos, donde capturamos momentos memorables, sonrisas gigantes, momentos de juego y diversión"
+    content="Pagina oficial del grupo Scout 55 Nabusimake de la Universidad de Antoquia"
   />
   <meta
     name="keywords"
-    content="Galeria, fotos, Nabusimake, Scouts, Grupo 55, Escultismo, Medellín"
+    content="Nabusimake, Scouts, Grupo 55, Escultismo, Medellin"
   />
-    <link rel="stylesheet" href="./styles/estilos.css"/>
-    <link rel="icon" type="image/png" href="./images/logo_grupo.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+  
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+  <link rel="stylesheet" href="./styles/estilos.css" />
+  <link rel="stylesheet" href="./styles/scrollSnap.css" />
+  <link rel="stylesheet" href="./styles/estilos__botones-redes.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="icon" type="image/png" href="./images/logo_grupo.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Signika:wght@300;400&display=swap"
-        rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&family=Signika:wght@300;400&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
     <title>Galería de fotos</title>
 </head>
 <body>
     
     <!--Barra de navegación-->
-    <nav >
-        <ul class="menu">
-            <li><a href="./quienes_somos.html">¿Quienes somos?</a></li>
-            <li><a href="./unidades.html">Unidades</a></li>
-            <li class="logoNavegacion"><a href="./index.html" > <img src="./images/logo_grupo.png" alt="Logo grupo"/></a></li>    
-            <li><a href="./galeria.html">Galeria</a></li>
-            <li><a href="./tienda.html">Tienda scout</a></li>
-            
-        </ul>
+    <nav>
+      <div class="nav__links">
+        <a href="./quienes_somos.html">¿Quienes somos?</a>
+        <a href="./unidades.html">Unidades</a>
+        <a href="./index.html">Inicio</a>
+        <a href="./galeria.html">Galeria</a>
+        <a href="./tienda.html">Tienda scout</a>
+        <div class="animation start-inicio"></div>
+      </div>
     </nav>
 
-    <h1>Galeria</h1>
-    <footer>
-        <div class="tituloPie">
-          <h4>
-          El grupo Scout 55 Nabusimake hace parte de la corporación Scout de
-          Antioquia
-        </h4>
-      </div>
+   <section>
+     <div class="galeria">
+      <h1>Galeria de momentos</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut illo nulla ipsam, quos optio, tempore perspiciatis est, maxime tempora adipisci temporibus expedita vel. Optio, eius totam autem officia aperiam eos.</p>
+
+      <div class="ac--container">
+        <figure>
+            <img src="image/01.jpg" alt="image01"/>
+            <input type="radio" name="ac--radio" checked="checked"/>
+            <figcaption><span>First image</span></figcaption>
+    
+            <figure>
+                <img src="image/02.jpg" alt="image02"/>
+                <input type="radio" name="ac--radio"/>
+                <figcaption><span>Second image</span></figcaption>
+    
+                <figure>
+                    <!-- ... -->
+                </figure>
+            </figure>
+        </figure>
+    </div>
+     </div>
+
+
+
+   </section>
+   <section>
+
+   </section>
   
-        <div class="contactoPie">
-          <p>Contacto</p>
-          <p>Telefono: +57 ### ## ##</p>
-          <p>Direccion: Carrera ## f ### Medellin, Antioquia</p>
-          <p>Siguenos en nuestras redes sociales</p>
-          <a href=""><img src="./images/facebook.svg" alt="Facebook" class="logosRedes"></a>
-          <a href=""><img src="./images/instagram.svg" alt="Instagram" class="logosRedes"></a>
-        </div>
-       
-        <div class="formPie">
-          <form>
-            <label for="nombre">Nombre</label>
-            <input type="name" name="nombre"/>
-            
-            <label for="correo">Correo electronico</label>
-            <input type="e-mail" name="correo"/>
-  
-          <label for="comentario">Dejanos un mensaje</label> 
-          <textarea name="comentario">Dejanos un mensaje</textarea>
-          </form>
-  
-        </div>
-      </footer>
 </body>
 </html>

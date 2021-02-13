@@ -20,7 +20,8 @@
     />
     <link rel="stylesheet" href="./styles/estilos.css" />
     <link rel="stylesheet" href="./styles/scrollSnap.css" />
-
+    <link rel="stylesheet" href="./styles/estilos__botones-redes.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="icon" type="image/png" href="./images/logo_grupo.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
@@ -49,12 +50,14 @@
     <!--Barra de navegación-->
 
     <nav>
-      <a href="./quienes_somos.html">¿Quienes somos?</a>
-      <a href="./unidades.html">Unidades</a>
-      <a href="./index.html">Inicio</a>
-      <a href="./galeria.html">Galeria</a>
-      <a href="./tienda.html">Tienda scout</a>
-      <div class="animation start-home"></div>
+      <div class="nav__links">
+        <a href="./quienes_somos.html">¿Quienes somos?</a>
+        <a href="./unidades.html">Unidades</a>
+        <a href="./index.html">Inicio</a>
+        <a href="./galeria.html">Galeria</a>
+        <a href="./tienda.html">Tienda scout</a>
+        <div class="animation start-inicio"></div>
+      </div>
     </nav>
     <div class="slider">
       <section>
@@ -350,13 +353,13 @@
         <div class="seccionContacto">
             <div class="seccionContacto__encabezado">
               
-              <p class="seccionContacto-tituloGrande">Contactanos</p>
+              <h1 class="seccionContacto-tituloGrande">Contactanos</h1>
               <p class="seccionContacto-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio rerum aliquid, labore debitis ipsum porro repudiandae, sint blanditiis maxime id delectus veniam quisquam inventore velit hic adipisci deserunt neque?</p>
             </div>
             
           <div class="seccionContacto__info">
             
-            <p class="seccionContacto-tituloMed">Contacto</p>
+            <h2 class="seccionContacto-tituloMed">Contacto</h2>
             <div class="seccionContacto-linea"></div>
             <div class="seccionContacto__info-grid">
               <img src="./images/email.svg" alt="email">
@@ -371,26 +374,55 @@
     
           <div class="seccionContacto__form">
             
-            <p class="seccionContacto-tituloMed" >Escribenos</p>
+            <h2 class="seccionContacto-tituloMed" >Escribenos</h2>
             <div class="seccionContacto-linea"></div>
-            <form>
+            <form class="seccionContacto__form-flex">
               
-              <input type="name" name="nombre" placeholder="Nombre" />
-              
-              
-              <input type="e-mail" name="correo" placeholder="Correo electronico"/>
+              <input class="seccionContacto__form-input" type="name" name="nombre" placeholder="Nombre" />
               
               
-              <textarea name="comentario">Dejanos un mensaje</textarea>
-              <input type="submit" value="Enviar">
+              <input class="seccionContacto__form-input"type="e-mail" name="correo" placeholder="Correo electronico"/>
+              
+              
+              <textarea class="seccionContacto__form-input" name="comentario" placeholder="Dejanos un mensaje"></textarea>
+              <input class="seccionContacto__form-submit"type="submit" value="Enviar">
             </form>
           </div>
 
           <div class="seccionContacto__redes">
            
-            <p class="seccionContacto-tituloMed">Siguenos </p>
+            <h2 class="seccionContacto-tituloMed">Siguenos </h2>
             <div class="seccionContacto-linea"></div>
-
+            <div class="seccionContacto__redes-icono">
+              <div class="social-buttons">
+                <a href="#" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
+                  <span class="social-button__inner">
+                   <i class="fab fa-facebook-f"></i>
+                  </span>
+                </a>
+                <a href="#" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn">
+                  <span class="social-button__inner">
+                   <i class="fab fa-linkedin-in"></i>
+                  </span>
+                </a>
+                <a href="#" class="social-buttons__button social-button social-button--snapchat" aria-label="SnapChat">
+                  <span class="social-button__inner">
+                   <i class="fab fa-snapchat-ghost"></i>
+                  </span>
+                </a>
+                <a href="#" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
+                  <span class="social-button__inner">
+                   <i class="fab fa-github"></i>
+                  </span>
+                </a>
+                <a href="#" class="social-buttons__button social-button social-button--codepen" aria-label="CodePen">
+                  <span class="social-button__inner">
+                   <i class="fab fa-codepen"></i>
+                  </span>
+                </a>
+              </div>
+              
+            </div>
           </div>
         </div>
    

@@ -1,12 +1,92 @@
+.galeria {
+  margin-top: 3rem;
+  padding: 2rem;
+}
+.galeria__encabezado {
+  margin: 2rem 1rem;
+  width: 60%;
+}
+.galeria__contenido {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.galeria__contenido__filtro {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  background-color: rgba(11, 11, 11, 0.562);
+  border-radius: 8px;
+  justify-content: center;
+  box-shadow: 0 3px 5px #000;
+}
+.galeria__contenido__filtro-titulo {
+  color: #fff;
+  font-family: "Signika", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  font-size: 1.5rem;
+}
+
+.galeria__encabezado-texto {
+  font-family: "Signika", sans-serif;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.galeria__encabezado-tituloGrande {
+  width: 100%;
+  padding-bottom: 1rem;
+  font-size: 3.5rem;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 1.5px solid #af1818;
+}
+
+.galeria__encabezado * {
+  text-align: left;
+}
+.fa-search {
+  font-size: 1rem;
+  margin: 1px;
+}
+.galeria__contenido__filtro-input {
+  margin: 8px;
+  background-color: transparent;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  transition: 0.5s ease;
+}
+.galeria__contenido__filtro-input:focus {
+  border-bottom: 2px solid #124b04;
+}
+
+.galeria__contenido__filtro-boton {
+  margin: 0.3rem;
+  padding: 2px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+.galeria__contenido__filtro-boton:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
 .acordeon {
   width: 70rem;
-  margin: 20px auto;
+  margin: 15px auto;
   overflow: hidden;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
-  border: 7px solid rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
 }
 .acordeon img {
+  height: 23rem;
   width: 30rem;
+  object-fit: cover;
   display: block;
   box-shadow: -8px 0px 16px black;
 }
@@ -14,6 +94,7 @@
   position: absolute;
   top: 0;
   left: 8rem;
+  height: 23rem;
   width: 30rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -30,7 +111,7 @@
   left: 30rem;
 }
 .acordeon input:checked ~ img {
-    filter: none;
+  filter: none;
 }
 .acordeon > figure {
   position: relative;
@@ -65,32 +146,27 @@
 }
 
 .acordeon figcaption span {
+  cursor: default;
   position: absolute;
   top: 40%;
   margin-top: -30px;
   right: 2rem;
   overflow: hidden;
   text-align: center;
-  background: rgba(11, 11, 11, 0.418);
+  background: rgba(11, 11, 11, 0.8);
   line-height: 2rem;
   font-size: 18px;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: 700;
-  padding: 20px;
+  padding: 1rem;
   color: #fff;
-    transition: 0;
-   font-family: "Signika", sans-serif; 
-}
-
-.acordeon figcaption span:hover{
-    -webkit-box-shadow: -6px 5px 15px 3px rgba(52, 50, 50, 0.8);
--moz-box-shadow:    -6px 5px 15px 3px rgba(52, 50, 50, 0.8);
-box-shadow:         -6px 5px 15px 3px rgba(52, 50, 50, 0.8);
-transition: 0;
+  transition: 0;
+  font-family: "Signika", sans-serif;
+  border-radius: 5px;
 }
 
 .acordeon input:checked + figcaption,
@@ -180,11 +256,29 @@ figure {
   margin: 0;
 }
 
+.acordeon__date {
+  position: absolute;
+  bottom: 2px;
+  left: 4%;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Signika", sans-serif;
+  background-color: rgba(175, 24, 24, 0.829);
+  margin: 1px;
+  padding: 5px;
+  border-radius: 5px;
+}
 
-.acordeon__date{
-    position: absolute;
-    bottom: 0;
-    left: 0.5rem;
-    font-size: 2rem;
-    color: #fff;
+.acordeon__nombreAlbum {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Signika", sans-serif;
+  writing-mode: vertical-lr;
+  background-color: rgba(11, 11, 11, 0.8);
+  margin: 1px;
+  padding: 5px;
+  border-radius: 5px;
 }

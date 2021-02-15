@@ -18,7 +18,9 @@
   crossorigin="anonymous"
 />
   <link rel="stylesheet" href="./styles/estilos.css" />
-  <link rel="stylesheet" href="./styles/scrollSnap.css" />
+ 
+  <link rel="stylesheet" href="./styles/tienda.css" />
+
   <link rel="stylesheet" href="./styles/estilos__botones-redes.css" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="icon" type="image/png" href="./images/logo_grupo.png" />
@@ -60,38 +62,326 @@
       </div>
     </nav>
 
-    <h1>Tienda</h1>
-    
-    <footer>
-        <div class="tituloPie">
-          <h4>
-          El grupo Scout 55 Nabusimake hace parte de la corporación Scout de
-          Antioquia
-        </h4>
-      </div>
-  
-        <div class="contactoPie">
-          <p>Contacto</p>
-          <p>Telefono: +57 ### ## ##</p>
-          <p>Direccion: Carrera ## f ### Medellin, Antioquia</p>
-          <p>Siguenos en nuestras redes sociales</p>
-          <a href=""><img src="./images/facebook.svg" alt="Facebook" class="logosRedes"></a>
-          <a href=""><img src="./images/instagram.svg" alt="Instagram" class="logosRedes"></a>
-        </div>
-       
-        <div class="formPie">
-          <form>
-            <label for="nombre">Nombre</label>
-            <input type="name" name="nombre"/>
+<main>
+      <h1>Conoce nuestros productos</h1>
+      <section class="seccionTienda">
+        <div class="tienda__filtro">
+          <div class="tienda__filtro-parametros">
             
-            <label for="correo">Correo electronico</label>
-            <input type="e-mail" name="correo"/>
+              <h2 class="tienda__filtro-titulo"><i class="fas fa-search"></i> Buscar productos</h2>
+              <input class="tienda__filtro-input" type="name" name="nombre" placeholder="Nombre" />
+               <select name="ordenarPor" class="tienda__filtro-input" aria-placeholder="Categoria">
+                <option value="Accesorios">Accesorios</option>
+                <option value="camping">Camping</option>
+                <option value="morrales">Morrales</option>
+                <option value="sleeping"">Sleeping bag</option>
+                <option value="camisetas">Camisetas</option>
+                <option value="gorras">Gorras</option>
+                
+              </select>
+              <label >Rango de precio</label>
+              <input class="tienda__filtro-input" type="range" min="1000" max="500000" value="50000">
+              <button class="tienda__filtro-boton">Filtrar</button>
+              <button class="tienda__filtro-boton"><i class="fas fa-shopping-cart"></i> Carrito</button>
+            <button class="tienda__filtro-boton  "><i class="far fa-heart"></i> Guardado</button>
   
-          <label for="comentario">Dejanos un mensaje</label> 
-          <textarea name="comentario">Dejanos un mensaje</textarea>
-          </form>
+          </div> 
+  
   
         </div>
-      </footer>
+        <div class="tienda__productos">
+         
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 1</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 2</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 3</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 4</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div><div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 5</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 6</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 7</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 8</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 9</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 10</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 11</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 12</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 13</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 14</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+          <div class="tienda__productos-card ">
+            <img class="card-img" src="./images/muestraTienda1.png" alt="morral">
+            <div class="card-descripcion">
+              
+              <div class="card-descripcion-text">
+                <h2>Producto 15</h2>
+                <p>$ 130.000</p>
+              </div>
+                <div class="card-descripcion-accion">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="seccionContacto">
+            <div class="seccionContacto__encabezado">
+              
+              <h1 class="seccionContacto-tituloGrande">Contactanos</h1>
+              <p class="seccionContacto-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio rerum aliquid, labore debitis ipsum porro repudiandae, sint blanditiis maxime id delectus veniam quisquam inventore velit hic adipisci deserunt neque?</p>
+            </div>
+            
+          <div class="seccionContacto__info">
+            
+            <h2 class="seccionContacto-tituloMed">Contacto</h2>
+            <div class="seccionContacto-linea"></div>
+            <div class="seccionContacto__info-grid">
+              <img src="./images/email.svg" alt="email">
+              <p>nbk55@info.com.co</p>
+              <img src="./images/informacion.svg" alt="telefono">
+              <p>+57 ### ## ##</p>
+              <img src="./images/ubicacion.svg" alt="direccion">
+              <p>Direccion: Carrera ## f ### Medellin, Antioquia</p>
+            </div>
+           
+          </div>
+    
+          <div class="seccionContacto__form">
+            
+            <h2 class="seccionContacto-tituloMed" >Escribenos</h2>
+            <div class="seccionContacto-linea"></div>
+            <form class="seccionContacto__form-flex">
+              
+              <input class="seccionContacto__form-input" type="name" name="nombre" placeholder="Nombre" />
+              
+              
+              <input class="seccionContacto__form-input"type="e-mail" name="correo" placeholder="Correo electronico"/>
+              
+              
+              <textarea class="seccionContacto__form-input" name="comentario" placeholder="Dejanos un mensaje"></textarea>
+              <input class="seccionContacto__form-submit"type="submit" value="Enviar">
+            </form>
+          </div>
+  
+          <div class="seccionContacto__redes">
+           
+            <h2 class="seccionContacto-tituloMed">Siguenos </h2>
+            <div class="seccionContacto-linea"></div>
+            <div class="seccionContacto__redes-icono">
+              <div class="social-buttons">
+                <a href="#" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
+                  <span class="social-button__inner">
+                   <i class="fab fa-facebook-f"></i>
+                  </span>
+                </a>
+                <a href="#" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn">
+                  <span class="social-button__inner">
+                   <i class="fab fa-linkedin-in"></i>
+                  </span>
+                </a>
+                <a href="#" class="social-buttons__button social-button social-button--snapchat" aria-label="SnapChat">
+                  <span class="social-button__inner">
+                   <i class="fab fa-snapchat-ghost"></i>
+                  </span>
+                </a>
+                <a href="#" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
+                  <span class="social-button__inner">
+                   <i class="fab fa-github"></i>
+                  </span>
+                </a>
+                <a href="#" class="social-buttons__button social-button social-button--codepen" aria-label="CodePen">
+                  <span class="social-button__inner">
+                   <i class="fab fa-codepen"></i>
+                  </span>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+   
+      </section>
+</main>
+    
+
 </body>
 </html>

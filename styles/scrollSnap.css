@@ -1,3 +1,8 @@
+body{
+  overflow-y: hidden;
+
+  
+}
 
 .slider {
   scroll-snap-type: y mandatory;

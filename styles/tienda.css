@@ -1,0 +1,138 @@
+main {
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+main h1 {
+    width: 60%;
+    padding-bottom: 1rem;
+  font-size: 3.5rem;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 1.5px solid #af1818;
+}
+.seccionTienda {
+    position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.tienda__filtro {
+  position: sticky;
+  top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(11, 11, 11, 0.562);
+  border-radius: 8px;
+  justify-content: start;
+  box-shadow: 0 3px 5px #000;
+  padding: 1rem;
+}
+.tienda__filtro-titulo {
+  color: #fff;
+  font-family: "Signika", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  font-size: 1.5rem;
+}
+.tienda__filtro-input {
+  margin: 8px;
+  background-color: transparent;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  transition: 0.5s ease;
+}
+.tienda__filtro-input:focus {
+  border-bottom: 2px solid #124b04;
+}
+.tienda__filtro-boton {
+  margin: 0.3rem;
+  padding: 2px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+.tienda__filtro-boton:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.tienda__productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+@media only screen and (max-width: 1000px) {
+  .tienda__productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .tienda__productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.tienda__productos-card {
+  height: 22rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  transition: 0.5s ease;
+}
+.tienda__productos-card:hover {
+  box-shadow: 9px 6px 20px 0px rgb(190, 190, 190);
+}
+.card-img {
+  width: 15rem;
+}
+.card-descripcion-text {
+  text-align: center;
+  font-family: "Signika", sans-serif;
+  margin: 1px;
+}
+.card-descripcion-text h2 {
+  margin: 1px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.tienda__productos-card:hover .card-descripcion-text h2 {
+  letter-spacing: 1px;
+}
+.card-descripcion-accion {
+  display: flex;
+  justify-content: center;
+}
+.card-descripcion-accion i {
+  margin: 10px;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+.card-descripcion-accion i:hover {
+  font-size: 1.1rem;
+}
+.card-descripcion-accion i:nth-child(1):hover {
+  color: #2393d4;
+}
+.card-descripcion-accion i:nth-child(2):hover {
+  color: red;
+}
+.card-descripcion-text p {
+  margin: 1px;
+}
+
+.tienda__filtro {
+  display: flex;
+  flex-direction: column;
+}
+
+.tienda__filtro-parametros {
+  display: flex;
+  flex-direction: column;
+}

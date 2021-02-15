@@ -65,66 +65,95 @@
       </div>
     </nav>
 
-    <section>
-      <div class="galeria">
-        <h1>Galeria de momentos</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut illo
-          nulla ipsam, quos optio, tempore perspiciatis est, maxime tempora
-          adipisci temporibus expedita vel. Optio, eius totam autem officia
-          aperiam eos.
-        </p>
-
-        <div class="acordeon">
-          <figure>
-            <div class="acordeon__date">sdfdsf</div>
-            <img src="./images/prueba13.jpg" alt="image01" />
-            <input type="radio" name="ac--radio" checked="checked" />
-            <figcaption><span>VER ALBÚM</span></figcaption>
-
-            <figure>
-            <div class="acordeon__date">sdfdsf</div>
-              <img src="./images/prueba13.jpg" alt="image02" />
-              <input type="radio" name="ac--radio" />
-              <figcaption><span>VER ALBÚM</span></figcaption>
-
+   <div class="slider">
+      <section>
+        <div class="galeria">
+          <div class="galeria__encabezado">
+            <h1 class="galeria__encabezado-tituloGrande">Galeria de momentos</h1>
+            <p class="galeria__encabezado-texto">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut illo
+              nulla ipsam, quos optio, tempore perspiciatis est, maxime tempora
+              adipisci temporibus expedita vel. Optio, eius totam autem officia
+              aperiam eos.
+            </p>
+          </div>
+  
+  
+  
+          <div class="galeria__contenido">
+            <div class="galeria__contenido__filtro">
+              <h2 class="galeria__contenido__filtro-titulo"><i class="fas fa-search"></i> Buscar albúm </h2>
+              <input class="galeria__contenido__filtro-input" type="name" name="nombre" placeholder="Nombre" />
+              
+               <input type="date" class="galeria__contenido__filtro-input" name="fecha" value="2018-07-22" min="2010-01-01" max="2021-12-31">
+               <select name="ordenarPor" class="galeria__contenido__filtro-input" aria-placeholder="Ordenar por">
+                <option value="antiguo">Mas antiguo</option>
+                <option value="reciente">Mas reciente</option>
+                <option value="unidad">Por unidad</option>
+  
+              </select>
+              <input type="submit" class="galeria__contenido__filtro-boton" value="Buscar">
+  
+  
+  
+            </div>
+            <div class="acordeon">
               <figure>
-            <div class="acordeon__date">sdfdsf</div>
-                <img src="./images/prueba13.jpg" alt="image02" />
-                <input type="radio" name="ac--radio" />
+                <div class="acordeon__nombreAlbum">DÍA DEL PENSAMIENTO</div>
+                <div class="acordeon__date">12/08/2020</div>
+                <img src="./images/prueba6.JPG" alt="image01" />
+                <input type="radio" name="ac--radio" checked="checked" />
                 <figcaption><span>VER ALBÚM</span></figcaption>
-
+    
                 <figure>
-            <div class="acordeon__date">sdfdsf</div>
-                  <img src="./images/prueba13.jpg" alt="image02" />
+                  <div class="acordeon__nombreAlbum">JAMBOREE</div>
+                <div class="acordeon__date">17/06/2019</div>
+                  <img src="./images/prueba8.JPG" alt="image02" />
                   <input type="radio" name="ac--radio" />
                   <figcaption><span>VER ALBÚM</span></figcaption>
-
+    
                   <figure>
-            <div class="acordeon__date">sdfdsf</div>
-                    <img src="./images/prueba13.jpg" alt="image02" />
+                    <div class="acordeon__nombreAlbum">CUMPLEAÑOS NBK</div>
+                <div class="acordeon__date">12/08/2020</div>
+                    <img src="./images/prueba12.jpg" alt="image02" />
                     <input type="radio" name="ac--radio" />
                     <figcaption><span>VER ALBÚM</span></figcaption>
-
+    
                     <figure>
-            <div class="acordeon__date">sdfdsf</div>
-                      <img src="./images/prueba13.jpg" alt="image02" />
+                      <div class="acordeon__nombreAlbum">OLIMPIADAS SCOUT</div>
+                <div class="acordeon__date">17/06/2019</div>
+                      <img src="./images/prueba7.jpg" alt="image02" />
                       <input type="radio" name="ac--radio" />
                       <figcaption><span>VER ALBÚM</span></figcaption>
+    
+                      <figure>
+                        <div class="acordeon__nombreAlbum">TRAVESIA ROVER</div>
+                <div class="acordeon__date">12/08/2020</div>
+                        <img src="./images/prueba10.jpg" alt="image02" />
+                        <input type="radio" name="ac--radio" />
+                        <figcaption><span>VER ALBÚM</span></figcaption>
+    
+                        <figure>
+                          <div class="acordeon__nombreAlbum">NAVIDAD NBK</div>
+                <div class="acordeon__date">17/06/2019</div>
+                          <img src="./images/prueba13.jpg" alt="image02" />
+                          <input type="radio" name="ac--radio" />
+                          <figcaption><span>VER ALBÚM</span></figcaption>
+                        </figure>
+                      </figure>
                     </figure>
+    
+                    
+                    <!-- ... -->
                   </figure>
                 </figure>
-
-                
-                <!-- ... -->
               </figure>
-            </figure>
-          </figure>
+            </div>
+          </div>
+  
+          
         </div>
-
-        
-      </div>
-    </section>
-    <section></section>
+      </section>
+   </div>
   </body>
 </html>

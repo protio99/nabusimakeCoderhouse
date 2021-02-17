@@ -14,11 +14,12 @@
 .galeria__contenido__filtro {
   display: flex;
   flex-direction: column;
-  margin: 15px auto;
+  margin: 15px 0;
   background-color: rgba(11, 11, 11, 0.562);
   border-radius: 8px;
   justify-content: center;
   box-shadow: 0 3px 5px #000;
+  width: 18%;
 }
 .galeria__contenido__filtro-titulo {
   color: #fff;
@@ -76,16 +77,15 @@
   color: #fff;
 }
 .acordeon {
-  width: 70rem;
-  margin: 15px auto;
+  width: 80%;
+  margin: 15px 0;
   overflow: hidden;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  border-radius: 5px;
+ 
+  
 }
 .acordeon img {
   height: 23rem;
-  width: 30rem;
+  width: 100%;
   object-fit: cover;
   display: block;
   box-shadow: -8px 0px 16px black;
@@ -95,7 +95,7 @@
   top: 0;
   left: 8rem;
   height: 23rem;
-  width: 30rem;
+  width: 25rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -108,7 +108,7 @@
   -o-transition: all 0.7s ease-in-out;
   -ms-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
-  left: 30rem;
+  left: 25rem;
 }
 .acordeon input:checked ~ img {
   filter: none;

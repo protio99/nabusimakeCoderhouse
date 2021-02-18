@@ -1,0 +1,204 @@
+#footer{
+    position: relative;
+}
+#footer p{
+    font-size: 1.5rem;
+}
+.footer__img1{
+    width: 20rem;
+    left: 78%;
+    top: 2.5%;
+    position: absolute;
+    transform: rotate(-45deg);
+    opacity: 70%;
+
+}
+
+
+
+.seccionContacto {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo titulo"
+      "contacto form redes";
+  
+    grid-row-gap: 40px;
+    grid-column-gap: 2px;
+    grid-template-columns: repeat(3, 1fr);
+  
+    padding: 5rem 1rem;
+    margin: 10px 20px auto 30px;
+  }
+
+  @media only screen and (max-width: 320px){
+    html{
+        font-size: 10px;
+    }  
+    .seccionContacto{
+          display: flex;
+          flex-direction: column;
+      }
+      .seccionContacto__form-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1rem;
+        flex-wrap: wrap;
+      }
+     
+
+      
+  }
+  @media only screen and (max-width: 480px){
+    html{
+        font-size: 9px;
+    }  
+    .seccionContacto{
+          display: flex;
+          flex-direction: column;
+      }
+      .seccionContacto__form-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1rem;
+        flex-wrap: wrap;
+      }
+     
+
+      
+  }
+  @media only screen and (max-width: 768px){
+    html{
+        font-size: 12px;
+    }  
+    .seccionContacto{
+          display: flex;
+          flex-direction: column;
+      }
+      .seccionContacto__form-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1rem;
+        flex-wrap: wrap;
+      }
+     
+
+      
+  }
+  .seccionContacto__info-grid {
+    display: grid;
+    grid-template-areas:
+      "iconoEmail email"
+      "iconoTel telefono"
+      "iconoLocacion direccion";
+    row-gap: 6px;
+    grid-template-columns: 2rem auto;
+    column-gap: 2rem;
+  }
+  .seccionContacto__info-grid p {
+    text-align: left;
+  }
+  
+  .seccionContacto__info-grid:nth-child(1) {
+    grid-area: iconoEmail;
+  }
+  .seccionContacto__info-grid:nth-child(2) {
+    grid-area: email;
+  }
+  .seccionContacto__info-grid:nth-child(3) {
+    grid-area: iconoTel;
+  }
+  .seccionContacto__info-grid:nth-child(4) {
+    grid-area: telefono;
+  }
+  .seccionContacto__info-grid:nth-child(5) {
+    grid-area: iconoLocacion;
+  }
+  .seccionContacto__info-grid:nth-child(6) {
+    grid-area: direccion;
+  }
+  
+  .seccionContacto-linea {
+    border-top: 1px solid #af1818;
+    height: 2px;
+    padding: 0;
+    margin: 20px 82px 20px 82px;
+  }
+  .seccionContacto-tituloMed {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Signika", sans-serif;
+    text-align: center;
+  }
+  
+  .seccionContacto__encabezado {
+    grid-area: titulo;
+  }
+  
+  .seccionContacto-texto {
+    font-family: "Signika", sans-serif;
+    text-align: left;
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+  .seccionContacto-tituloGrande {
+    text-align: left;
+    font-size: 5rem;
+    font-family: "Sansita Swashed", cursive;
+    font-weight: bold;
+  }
+  
+  .seccionContacto__info {
+    grid-area: contacto;
+  }
+  .seccionContacto__info img {
+    width: 2rem;
+    margin: 0.5rem;
+  }
+  .seccionContacto__form {
+    grid-area: form;
+  }
+  .seccionContacto__redes {
+    grid-area: redes;
+  }
+  .seccionContacto__form-flex {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .seccionContacto__form-input {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: #5f635f;
+    background-color: #f1eeeeda;
+    border-radius: 3px;
+    width: 20rem;
+    border: #c9c8c8da 1px solid;
+  }
+  
+  .seccionContacto__form-submit {
+    
+    padding: .1rem;
+    width: 5rem;
+  }
+  
+  .seccionContacto__form-submit:hover {
+    box-shadow: 7px 13px 37px rgba(34, 34, 34, 0.596);
+  }
+  
+  /*-----------------------------------------------------------------------------------------------------*/
+  
+  .text-center {
+    text-align: center;
+  }
+  

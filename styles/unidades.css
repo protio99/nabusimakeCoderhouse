@@ -4,43 +4,29 @@ body{
 }
 .unidades{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 4fr 2fr;
     grid-row: auto;
-    column-gap: 1rem;
+    
     width: 100vw;
     
 
 }
-.unidades__banner img{
+.unidades__banner-fondo{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     position: relative;
     
 }
-.unidades__banner-titulo{
-    color: #fff;
-    font-family: "Signika", sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    writing-mode: vertical-rl;
-    position: absolute;
-    top: 1%;
-    left: 1.5%;
-    z-index: 2;
-    text-align: start;
-    
-    
 
-
-}
 .unidades__info-fondo{
     width: 100%;
-    height: 14rem;
+    height: 100%;
     object-fit: cover;
-    filter: grayscale(90%);
+    filter: grayscale(95%);
     transition: 1s ease;
-    border-radius: 5px;
+    filter: blur(1px);
+    
     
 
 }
@@ -52,8 +38,9 @@ body{
     color: #fcfcfc80;
     text-shadow: none;
     font-size: 3rem;
-    top: 75%;
+    top: 55%;
     left: 0.5%;
+    font-family: "Sansita Swashed", cursive;
 
 }
 .unidades__info-contenedor:hover .unidades__info-logo{
@@ -63,44 +50,27 @@ body{
 
 
 }
-.unidades__info-texto{
-    position: absolute;
-    width: 30rem;
-    top: -80%;
-    left: 20%;
-    
-    padding: 0.5rem;
-    margin: 1rem;
-    text-align: start;
-    border-radius: 5px;
-    box-shadow: 4px 4px 1px 0px #414141a2;
-    font-family: "Signika", sans-serif;
-    transition: 0.5s ease;
 
-    
-}
-.unidades__info-contenedor:hover .unidades__info-texto{
-    top: 10%;
-    left: 20%;
-}
+
 .unidades__info-contenedor:hover .unidades__info-boton{
     top: 35%;
-    left: 80%;
+    left: 35%;
 }
 
 .unidades__info-boton{
     position: absolute;
-    top: -30%;
-    left: 80%;
-    padding: 0.5rem 1rem;
+    top: -90%;
+    left:35%;
+    padding: 0.5rem;
     font-family: "Signika", sans-serif;
     background: rgba(11, 11, 11, 0.8);
     border: none;
     color: #fff;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-radius: 5px;
     transition: 0.5s ease;
+    z-index: 1;
 
 
 }
@@ -110,104 +80,81 @@ body{
 
 }
 .unidades__info-logo{
-    width: 12.5rem;
+    width: 4rem;
     position: absolute;
     z-index: 3;
-    left: 80%;
-    bottom: 3%;
+    left: calc(50% - 2rem);
+    top: 12%;
     transition: 0.5s ease;
+
 
 }
 .unidades__info-titulo{
     position: absolute;
     z-index: 1;
-    font-family: "Signika", sans-serif;
-    font-weight: bold;
-    font-size: 7rem;
-    
-    top: 50%;
-    left: 0.5%;
+    font-family: "Signika", sans-serif;  
+    font-size: 1.5rem;
+    color: #fff;
+    bottom: -3%;
+    left: 0;
     text-shadow: 2px 4px 2px rgba(0,0,0,0.57);
+    width: 100%;
     transition: 0.5s ease;
+    text-align: center;
 
 }
-.familia-colorTexto{
-background-color: #79ccf8;
 
-
-}
-.familia-color{
-color: #79ccf8;
-
-}
-.manada-colorTexto{
-    background-color: #f69a00;
-
-}
-.manada-color{
-    color: #f69a00;
-}
-.tropa-colorTexto{
-    background-color: #003c10;
-    color: #fff;
-}
-.tropa-color{
-    color: #003c10;
-}
-.sociedad-colorTexto{
-    background-color: #430086;
-    color: #fff;
-}
-.sociedad-color{
-    color: #430086;
-}
-.clan-colorTexto{
-    background-color:#f00000  ;
-    color: #fff;
-    box-shadow: 4px 4px 1px 0px rgba(65, 36, 36, 0.384);
-}
-.clan-color{
-    color: #f00000 ;
-}
-.jefatura-colorTexto{
-    background-color: rgb(15, 15, 63);
-    color: #fff;
-}
-.jefatura-color{
-    color: rgb(15, 15, 63);
-    
-}
 .unidades__info-contenedor{
-    margin-top: 1rem;
+   
     position: relative;
     overflow: hidden;
 }
-.unidades__encabezado{
-    margin-top: 6rem;
-}
+
 .unidades__info{
     display: flex;
     flex-direction: column;
+    height: 100vh;
 
 }
 
-.unidades__jefatura .unidades__info-fondo{
-    object-position: 0rem -27rem;
+.unidades__info-contenedor{
+    height: 16.66666667vh;
 }
 
-.unidades__sociedad .unidades__info-fondo{
-    object-position: 0rem -15rem;
-
+.unidades__banner-contenedor{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 25%);
+    align-items: center;  
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 50%;
+    height: 70%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    justify-content: center;
+    
+   
 
 }
+.unidades__banner-titulo{
+    color: #fff;
+    font-family: "Sansita Swashed", cursive;
 
-.unidades__tropa .unidades__info-fondo{
-    object-position: 0rem -7rem;
-
+    font-size: 1.5rem;
+    font-weight: bold; 
+    z-index: 2;
+    text-align: center;
 
 }
-.unidades__manada .unidades__info-fondo{
-    object-position: 0rem -25rem;
+.unidades__banner-logo{
+    width: 8rem;
+}
+.unidades__banner-texto{
+    color: #fff;
+}
 
-
+.unidades__banner{
+    position: relative;
 }

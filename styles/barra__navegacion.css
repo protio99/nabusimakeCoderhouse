@@ -1,0 +1,89 @@
+nav {
+    text-align: center;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    width: 100%;
+    height: 3.3rem;
+    z-index: 2;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .nav__links {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  nav a {
+    line-height: 3.5rem;
+    height: 100%;
+    font-size: 1rem;
+    font-family: "Signika", sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+  }
+  nav a:nth-child(1) {
+    width: 12vw;
+  }
+  nav a:nth-child(2) {
+    width: 8vw;
+  }
+  nav a:nth-child(3) {
+    width: 7vw;
+  }
+  nav a:nth-child(4) {
+    width: 8vw;
+  }
+  nav a:nth-child(5) {
+    width: 10vw;
+  }
+  nav .start-about,
+  a:nth-child(1):hover ~ .animation {
+    width: 12vw;
+    left: 0;
+    background-color: #af1818;
+  }
+  nav .start-unidades,
+  a:nth-child(2):hover ~ .animation {
+    width: 8vw;
+    left: 12vw;
+    background-color: #fbbb09;
+  }
+  nav .start-inicio,
+  a:nth-child(3):hover ~ .animation {
+    width: 7vw;
+    left: 20vw;
+    background-color: #124b04;
+  }
+  nav .start-galeria,
+  a:nth-child(4):hover ~ .animation {
+    width: 8vw;
+    left: 27vw;
+    background-color: #af1818;
+  }
+  nav .start-tienda,
+  a:nth-child(5):hover ~ .animation {
+    width: 10vw;
+    left: 35vw;
+    background-color: #fbbb09;
+  }

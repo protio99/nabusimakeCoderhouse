@@ -35,103 +35,19 @@ p {
   font-weight: 300;
 }
 /*----------------------Diseño barra navegación----------------------------------------------------------*/
-nav {
-  text-align: center;
-  position: fixed;
-  top: 1rem;
-  left: 0;
-  width: 100%;
-  height: 4vw;
-  z-index: 2;
-  font-size: 0;
-  display: flex;
-  justify-content: center;
-}
-.nav__links {
-  border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
-}
-a:hover {
-  text-decoration: none;
-  color: white;
-}
-nav a {
-  line-height: 4vw;
-  height: 100%;
-  font-size: 1.09vw;
-  font-family: "Signika", sans-serif;
-  font-weight: bold;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  cursor: pointer;
-}
-nav .animation {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  z-index: 0;
-  transition: all 0.5s ease 0s;
-  border-radius: 8px;
-}
-nav a:nth-child(1) {
-  width: 12vw;
-}
-nav a:nth-child(2) {
-  width: 8vw;
-}
-nav a:nth-child(3) {
-  width: 7vw;
-}
-nav a:nth-child(4) {
-  width: 8vw;
-}
-nav a:nth-child(5) {
-  width: 10vw;
-}
-nav .start-about,
-a:nth-child(1):hover ~ .animation {
-  width: 12vw;
-  left: 0;
-  background-color: #af1818;
-}
-nav .start-unidades,
-a:nth-child(2):hover ~ .animation {
-  width: 8vw;
-  left: 12vw;
-  background-color: #fbbb09;
-}
-nav .start-inicio,
-a:nth-child(3):hover ~ .animation {
-  width: 7vw;
-  left: 20vw;
-  background-color: #124b04;
-}
-nav .start-galeria,
-a:nth-child(4):hover ~ .animation {
-  width: 8vw;
-  left: 27vw;
-  background-color: #af1818;
-}
-nav .start-tienda,
-a:nth-child(5):hover ~ .animation {
-  width: 10vw;
-  left: 35vw;
-  background-color: #fbbb09;
-}
+
 
 /*------------------------------------------------------------------------------------------------------*/
 /*----------------------Banner--------------------------------------------------------------------------*/
 
+.banner .carousel img {
+  width: 100vw;
+  object-fit: cover;
+}
+
 .banner .carousel {
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
-  position: relative;
 }
 /*-----------------------------------------------------------------------------------------------------*/
 
@@ -488,121 +404,3 @@ a:nth-child(5):hover ~ .animation {
 /*-----------------------------------------------------------------------------------------------------*/
 /*----------------------Pie de pagina----------------------------------------------------------------*/
 
-.seccionContacto {
-  display: grid;
-  grid-template-areas:
-    "titulo titulo titulo"
-    "contacto form redes";
-
-  grid-row-gap: 40px;
-  grid-column-gap: 2px;
-  grid-template-columns: repeat(3, 1fr);
-
-  padding: 5rem 1rem;
-  margin: 10px 20px auto 30px;
-}
-.seccionContacto__info-grid {
-  display: grid;
-  grid-template-areas:
-    "iconoEmail email"
-    "iconoTel telefono"
-    "iconoLocacion direccion";
-  row-gap: 10px;
-}
-.seccionContacto__info-grid p {
-  text-align: left;
-}
-
-.seccionContacto__info-grid:nth-child(1) {
-  grid-area: iconoEmail;
-}
-.seccionContacto__info-grid:nth-child(2) {
-  grid-area: email;
-}
-.seccionContacto__info-grid:nth-child(3) {
-  grid-area: iconoTel;
-}
-.seccionContacto__info-grid:nth-child(4) {
-  grid-area: telefono;
-}
-.seccionContacto__info-grid:nth-child(5) {
-  grid-area: iconoLocacion;
-}
-.seccionContacto__info-grid:nth-child(6) {
-  grid-area: direccion;
-}
-
-.seccionContacto-linea {
-  border-top: 1px solid #af1818;
-  height: 2px;
-  padding: 0;
-  margin: 20px 82px 20px 82px;
-}
-.seccionContacto-tituloMed {
-  font-size: 2.6vw;
-  font-weight: bold;
-  font-family: "Signika", sans-serif;
-  text-align: center;
-}
-
-.seccionContacto__encabezado {
-  grid-area: titulo;
-}
-
-.seccionContacto-texto {
-  font-family: "Signika", sans-serif;
-  text-align: left;
-  font-size: 1.3vw;
-  margin-right: 29vw;
-}
-.seccionContacto-tituloGrande {
-  text-align: left;
-  font-size: 5vw;
-  font-family: "Sansita Swashed", cursive;
-  font-weight: bold;
-}
-
-.seccionContacto__info {
-  grid-area: contacto;
-}
-.seccionContacto__info img {
-  width: 2.5vw;
-}
-.seccionContacto__form {
-  grid-area: form;
-}
-.seccionContacto__redes {
-  grid-area: redes;
-}
-.seccionContacto__form-flex {
-  display: flex;
-  justify-content: end;
-  padding: 1vw;
-  flex-wrap: wrap;
-}
-
-.seccionContacto__form-input {
-  padding: 0.5vw;
-  margin-top: 0.5vw;
-  color: #5f635f;
-  background-color: #f1eeeeda;
-  border-radius: 3px;
-  width: 30vw;
-  border: #c9c8c8da 1px solid;
-}
-
-.seccionContacto__form-submit {
-  margin-top: 0.5vw;
-  padding: 0.4vw;
-  width: 15vw;
-}
-
-.seccionContacto__form-submit:hover {
-  box-shadow: 7px 13px 37px rgba(34, 34, 34, 0.596);
-}
-
-/*-----------------------------------------------------------------------------------------------------*/
-
-.text-center {
-  text-align: center;
-}

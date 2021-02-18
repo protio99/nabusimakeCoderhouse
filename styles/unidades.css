@@ -158,3 +158,119 @@ body{
 .unidades__banner{
     position: relative;
 }
+@media only screen and (max-width: 320px){
+    html{
+        font-size: 10px;
+    }
+    .unidades{
+        display: flex;
+        flex-direction: column;
+        width: 100vw; 
+    }
+    .unidades__banner-contenedor{
+    width: 80%;
+    left: calc(50% - 40%);
+    }
+    .unidades__info-titulo{
+         font-size: 2.5rem;
+       
+    
+    }
+    .unidades__info-logo{
+        width: 7rem;
+        left: calc(50% - 3.5rem)
+    }
+    .unidades__info-contenedor:hover .unidades__info-boton{
+        top: 35%;
+        left: 35%;
+    }
+    .unidades__info-boton{
+       
+        top: -90%;
+        left:35%;   
+        font-size: 1rem;
+        
+    
+    
+    }
+
+}
+@media only screen and (max-width: 480px){
+    html{
+        font-size: 10px;
+    }
+    .unidades{
+        display: flex;
+        flex-direction: column;
+        
+        
+        width: 100vw;
+        
+    
+    }
+    .unidades__banner-contenedor{
+        width: 85%;
+        left: calc(50% - 42.5%);
+        }
+        .unidades__info-titulo{
+             font-size: 2.5rem;
+           
+        
+        }
+        .unidades__info-logo{
+            width: 7rem;
+            left: calc(50% - 3.5rem)
+        }
+        .unidades__info-contenedor:hover .unidades__info-boton{
+            top: 35%;
+            left: 45%;
+        }
+        .unidades__info-boton{
+           
+            top: -90%;
+            left:45%;   
+            font-size: 1rem;
+            
+        
+        
+        }
+}
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 13px;
+    }
+    .unidades{
+        display: flex;
+        flex-direction: column;
+        
+        
+        width: 100vw;
+ 
+    }
+    .unidades__banner-contenedor{
+        width: 85%;
+        left: calc(50% - 42.5%);
+        }
+        .unidades__info-titulo{
+             font-size: 2.5rem;
+           
+        
+        }
+        .unidades__info-logo{
+            width: 5rem;
+            left: calc(50% - 2.5rem)
+        }
+        .unidades__info-contenedor:hover .unidades__info-boton{
+            top: 35%;
+            left: 45%;
+        }
+        .unidades__info-boton{
+           
+            top: -90%;
+            left:45%;   
+            font-size: 1rem;
+            
+        
+        
+        }
+}

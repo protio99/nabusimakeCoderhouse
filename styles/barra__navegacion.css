@@ -43,47 +43,52 @@ nav {
     border-radius: 8px;
   }
   nav a:nth-child(1) {
-    width: 12vw;
+    width: 9rem;
   }
   nav a:nth-child(2) {
-    width: 8vw;
+    width: 7rem;
   }
   nav a:nth-child(3) {
-    width: 7vw;
+    width: 6rem;
   }
   nav a:nth-child(4) {
-    width: 8vw;
+    width: 7rem;
   }
   nav a:nth-child(5) {
-    width: 10vw;
+    width: 8rem;
   }
   nav .start-about,
   a:nth-child(1):hover ~ .animation {
-    width: 12vw;
+    width: 9rem;
     left: 0;
     background-color: #af1818;
   }
   nav .start-unidades,
   a:nth-child(2):hover ~ .animation {
-    width: 8vw;
-    left: 12vw;
+    width: 7rem;
+    left: 9rem;
     background-color: #fbbb09;
   }
   nav .start-inicio,
   a:nth-child(3):hover ~ .animation {
-    width: 7vw;
-    left: 20vw;
+    width: 6rem;
+    left: 16rem;
     background-color: #124b04;
   }
   nav .start-galeria,
   a:nth-child(4):hover ~ .animation {
-    width: 8vw;
-    left: 27vw;
+    width: 7rem;
+    left: 22rem;
     background-color: #af1818;
   }
   nav .start-tienda,
   a:nth-child(5):hover ~ .animation {
-    width: 10vw;
-    left: 35vw;
+    width: 8rem;
+    left: 29rem;
     background-color: #fbbb09;
+  }
+  @media only screen and (max-width: 320px){
+    html{
+        font-size: 8px;
+    }
   }

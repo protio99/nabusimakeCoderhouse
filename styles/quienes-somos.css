@@ -1,3 +1,4 @@
+
 .aboutUs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -29,7 +30,7 @@
 }
 
 
-.aboutUs__columna2 h1{
+.aboutUs-titulo{
     font-size: 2.8rem;
     font-weight: bold;
 }
@@ -66,4 +67,84 @@
     letter-spacing: 0.3rem;
     border-bottom: 2px solid #fff;
 
+}
+
+@media only screen and (max-width: 320px){
+    html{
+        font-size: 8px;
+    }
+    .aboutUs{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .aboutUs__columna1 p{
+        top: 50%;
+    left: 30%;
+    color: #fff;
+    font-size: 3rem;
+
+    }
+    .aboutUs__columna3 p{
+        top: 30%;
+    left: 10%;
+    color: #fff;
+    font-size: 2rem;
+
+    }
+    .aboutUs__columna2 img{
+        width: 8rem;
+    }
+    .aboutUs__columna2{
+        height: 25rem;
+    }
+  }
+
+  @media only screen and (max-width: 480px){
+    html{
+        font-size: 9px;
+    } 
+    .aboutUs{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .aboutUs__columna1 p{
+        top: 50%;
+    left: 25%;
+    color: #fff;
+    font-size: 4rem;
+
+    }
+    .aboutUs__columna3 p{
+        top: 50%;
+    left: 10%;
+    color: #fff;
+    font-size: 2rem;
+
+    }
+}
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 12px;
+    } 
+    .aboutUs{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .aboutUs__columna1 p{
+        top: 50%;
+    left: 25%;
+    color: #fff;
+    font-size: 4rem;
+
+    }
+    .aboutUs__columna3 p{
+        top: 50%;
+    left: 28%;
+    color: #fff;
+    font-size: 2rem;
+
+    }
 }

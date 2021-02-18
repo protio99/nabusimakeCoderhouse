@@ -282,3 +282,62 @@ figure {
   padding: 5px;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 320px){
+  html{
+      font-size: 10px;
+  }
+  .galeria__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .galeria__contenido__filtro {
+    display: flex;
+    flex-direction: column;
+    
+    width: 50%;
+  }
+
+}
+@media only screen and (max-width: 480px){
+  html{
+      font-size: 10px;
+  }
+  .galeria__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .galeria__contenido__filtro {
+    display: flex;
+    flex-direction: column;
+    
+    width: 20%;
+  }
+  .acordeon {
+    width: 100%;}
+}
+
+@media only screen and (max-width: 768px){
+  html{
+      font-size: 13px;
+  }
+  .galeria__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .galeria__contenido__filtro {
+    display: flex;
+    flex-direction: column;
+    
+    width: 20%;
+  }
+  .acordeon {
+    width: 100%;}
+
+}
